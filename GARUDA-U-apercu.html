@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GARUDA · Résidence U</title>
+<style>
+:root{color-scheme:light;--ink:#28453d;--muted:#68776e;--line:#dce2d8;--paper:#f6f7f0;--sage:#dce7d8}*{box-sizing:border-box}body{margin:0;background:var(--paper);font:14px 'Segoe UI',Arial,sans-serif;color:var(--ink)}button,input,select{font:inherit;color:inherit}button,select{cursor:pointer}button{border:1px solid var(--line);background:#fffefa;border-radius:9px;padding:10px 14px;min-height:42px}button:hover{background:#ebf0e6}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #679b91;outline-offset:3px}button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}header{display:flex;align-items:center;justify-content:space-between;padding:22px 34px;border-bottom:1px solid var(--line);gap:16px;background:#fbfbf6}.brand{display:flex;align-items:center;gap:12px}.mark{width:38px;height:38px;background:#29463c;color:#e3e8c2;display:grid;place-items:center;border-radius:50%;font:26px Georgia}.wordmark{letter-spacing:5px;font-size:18px;font-weight:650}.brand small{display:block;letter-spacing:1.8px;font-size:9px;color:var(--muted);margin-top:4px}.badge{font-size:11px;padding:7px 11px;border-radius:20px;background:#ede9d5;color:#71643c;white-space:nowrap}.wrap{max-width:1650px;margin:auto;padding:28px 34px}.heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}.eyebrow{font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:var(--muted);margin:0 0 10px}h1{font:40px Georgia,serif;font-weight:400;letter-spacing:-1.3px;margin:0 0 9px}h1 em{font-style:normal;color:#7c9077}p{line-height:1.6}.subtitle{margin:0;color:var(--muted);font-size:13px}.metrics{display:flex;gap:30px;padding-bottom:4px}.metric strong{display:block;font:28px Georgia}.metric span{font-size:11px;color:var(--muted)}.filters{display:flex;align-items:end;gap:12px;margin-bottom:16px}.field{display:flex;flex-direction:column;gap:6px;min-width:135px}.field span{font-size:10px;color:var(--muted);letter-spacing:.6px}select,input{height:42px;border:1px solid var(--line);background:#fffefa;border-radius:8px;padding:0 12px;max-width:100%}.search{flex:1}.grid{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:18px;align-items:start}.scene{position:relative;height:590px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(ellipse at 52% 44%,#f5f7ed 0,#eaf0e4 85%);overflow:hidden}.scene:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(#c3cdb8 .7px,transparent .7px);background-size:5px 5px}.viewport{position:absolute;inset:0}.tools{position:absolute;top:17px;left:17px;display:flex;gap:6px;z-index:2}.tools button{font-size:12px;padding:8px 12px;min-height:38px}.scene-meta{position:absolute;top:70px;left:20px;pointer-events:none;font-size:11px;color:#697969}.scene-meta strong{font-weight:600}.zoom{position:absolute;right:16px;bottom:54px;display:flex;flex-direction:column;gap:6px}.zoom button{width:40px;height:40px;padding:0;font-size:20px}.scene-foot{position:absolute;bottom:16px;left:20px;right:20px;display:flex;justify-content:space-between;gap:10px;color:#647461;font-size:10px;pointer-events:none}.north{font-size:12px;letter-spacing:1px}.tooltip{position:absolute;left:50%;bottom:47px;transform:translateX(-50%);padding:9px 14px;border-radius:30px;background:#28453deb;color:white;font-size:12px;pointer-events:none;white-space:nowrap;max-width:95%}.legend{display:flex;flex-wrap:wrap;gap:10px 19px;padding:16px 4px;font-size:10px;color:var(--muted)}.legend span{display:flex;gap:6px;align-items:center}.dot{height:9px;width:9px;display:inline-block;border-radius:50%;flex-shrink:0}.aside{background:#fffefa;border:1px solid var(--line);border-radius:18px;overflow:hidden}.aside-head{padding:21px 21px 17px;border-bottom:1px solid var(--line)}h2{font:24px Georgia;margin:0 0 7px}.aside-head p{font-size:12px;margin:0;color:var(--muted)}.detail{padding:22px;min-height:260px}.empty-icon{width:64px;height:64px;margin:5px 0 25px;border:1px solid #cfd9c9;border-radius:15px;display:grid;place-items:center;background:#eef2e7;color:#789078;font-size:32px}.detail h3{font:23px Georgia;margin:0 0 12px}.detail p{font-size:12px;color:var(--muted)}.unit-code{font:36px Georgia;margin-bottom:8px}.pill{display:inline-flex;gap:7px;align-items:center;border-radius:6px;background:#edf1e7;padding:7px 9px;font-size:10px;margin-bottom:16px}.spec{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #edf0e8;padding:11px 0;font-size:12px}.spec span{color:var(--muted)}.spec b{text-align:right;font-weight:550}.id{font-size:10px;line-height:1.5;overflow-wrap:anywhere;color:var(--muted);margin-top:20px}.aside-bottom{padding:18px 22px;background:#eff2e8;border-top:1px solid var(--line);font-size:11px;line-height:1.7}.aside-bottom strong{display:block;letter-spacing:1px;font-size:9px;margin-bottom:5px}.listbar{display:flex;align-items:center;justify-content:space-between;margin:7px 0 14px;gap:12px}.listbar p{margin:0;font-size:12px;color:var(--muted)}.list{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fffefa}.unitgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(115px,1fr));gap:8px}.unitbtn{font-size:12px;text-align:left;padding:10px}.unitbtn small{display:block;font-size:9px;color:#53645a;margin-top:5px}.unitbtn[aria-pressed=true] small{color:#e5eedf}.unitbtn .dot{margin-right:6px}.list-empty{padding:18px}.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:10px}.footer a{color:inherit}.error{padding:28px;font-size:14px}.hide,[hidden]{display:none!important}
+@media(min-width:1500px){.scene{height:660px}.grid{grid-template-columns:minmax(0,1fr) 310px}}
+@media(max-width:1000px){.wrap{padding:24px 20px}.grid{grid-template-columns:minmax(0,1fr) 250px}.scene{height:530px}.metrics{gap:18px}.filters{flex-wrap:wrap}.search{min-width:190px}.tools{gap:4px}.tools button{padding:7px 9px}}
+@media(max-width:760px){header{padding:18px}.wordmark{font-size:15px}.badge{font-size:9px}.wrap{padding:24px 16px}.heading{display:block}h1{font-size:34px}.metrics{margin-top:20px;gap:32px}.metric strong{font-size:25px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{min-width:0}.search{min-width:0}.grid{grid-template-columns:1fr}.scene{height:480px}.aside{display:grid;grid-template-columns:1fr}.detail{min-height:0}.aside-head{padding:16px 20px}.detail{padding:18px 20px}.empty-icon{display:none}.scene-foot{font-size:9px;left:15px;right:15px}.tools{left:10px;top:12px;gap:4px}.tools button{font-size:11px;padding:7px 9px}.scene-meta{left:15px;top:66px}.footer{flex-direction:column}.legend{line-height:1.4}.listbar p{max-width:180px}.tooltip{font-size:10px}.aside-bottom{padding:14px 20px}}
+</style></head><body>
+<header><div class="brand"><div class="mark" aria-hidden="true">G</div><div><div class="wordmark">GARUDA</div><small>RESIDENCES COLLECTION</small></div></div><span class="badge">Démonstration · données fictives</span></header>
+<main class="wrap"><section class="heading"><div><p class="eyebrow">Collection résidentielle / Étude 001</p><h1>Un jardin. <em>Trois perspectives.</em></h1><p class="subtitle">Résidence U — découvrez les appartements autour du cœur paysager.</p></div><div class="metrics"><div class="metric"><strong>150</strong><span>appartements</span></div><div class="metric"><strong>05</strong><span>niveaux</span></div><div class="metric"><strong>03</strong><span>ailes</span></div></div></section>
+<section class="filters" aria-label="Filtres des appartements"><label class="field"><span>AILE</span><select id="wing"><option value="all">Toutes les ailes</option><option value="A">A · Nord</option><option value="B">B · Ouest</option><option value="C">C · Est</option></select></label><label class="field"><span>NIVEAU</span><select id="floor"><option value="all">Tous les niveaux</option><option value="0">Rez-de-chaussée</option><option value="1">R+1</option><option value="2">R+2</option><option value="3">R+3</option><option value="4">R+4</option></select></label><label class="field"><span>ÉTAT AFFICHÉ</span><select id="status"><option value="all">Tous les états</option><option value="available">Disponible</option><option value="option">Option temporaire</option><option value="reserved">Réservation confirmée</option><option value="sold">Vendu · non soldé</option><option value="paid">Entièrement payé</option><option value="unavailable">Indisponible</option><option value="unknown">Statut inconnu</option></select></label><label class="field search"><span>RECHERCHER UN APPARTEMENT</span><input id="query" type="search" placeholder="Par exemple : A-301" autocomplete="off" maxlength="80"></label></section>
+<div class="grid"><section><div class="scene"><div id="viewport" class="viewport"></div><div class="tools" role="group" aria-label="Vue du plan"><button id="view3d" aria-pressed="true">Vue 3D</button><button id="viewtop" aria-pressed="false">Du dessus</button><button id="explode" aria-pressed="false">Vue éclatée</button><button id="reset" aria-label="Réinitialiser la vue et les filtres">↺</button></div><div class="scene-meta"><strong id="visible-count">150 appartements</strong><span> · géométrie conceptuelle</span></div><div class="zoom"><button id="zoom-in" aria-label="Agrandir">+</button><button id="zoom-out" aria-label="Réduire">−</button></div><div id="tooltip" class="tooltip" hidden></div><div class="scene-foot"><span>Glisser pour tourner · molette ou + / − pour zoomer</span><span class="north">↑ N <small id="orientation">indicatif</small></span></div></div><div id="legend" class="legend" aria-label="Légende des couleurs"></div></section>
+<aside class="aside" aria-label="Informations sur l’appartement"><div class="aside-head"><p class="eyebrow">Votre sélection</p><h2>L’espace qui vous ressemble.</h2><p>Explorez une aile, un étage, un appartement.</p></div><div id="detail" class="detail" aria-live="polite"></div><div class="aside-bottom"><strong>UNE MAQUETTE À EXPLORER</strong>RDC + 4 étages · 30 appartements par niveau.<br>Surfaces et états présentés à titre fictif.<br>Aucune réservation depuis cet aperçu.</div></aside></div>
+<div class="listbar"><p id="list-summary" aria-live="polite">150 appartements dans cette vue</p><button id="toggle-list" aria-expanded="false" aria-controls="list">Afficher la liste</button></div><section id="list" class="list" hidden aria-label="Liste accessible des appartements"><div id="unitgrid" class="unitgrid"></div></section>
+<footer class="footer"><span>GARUDA / Résidence U · Démonstration 01 · Septembre 2026</span><span>Dimensions fictives · Les statuts commerciaux et les paiements sont distincts.</span></footer>
+</main><noscript><p class="error">Activez JavaScript pour explorer la maquette. Le fichier CSV contient la liste des 150 appartements.</p></noscript>
+<script type="module">
+/** GARUDA U • géométrie fictive • interface proposée garuda-plan/0.1 */
+const manifest = Object.freeze({schema:'garuda-plan/0.1', project:'garuda-u-demo', version:'1.0.0', fictitious:true, units:150, levels:5, dependencies:[]});
+const units = Object.freeze([{"unit_id":"dc5f38bb-c5ed-534d-9bea-c7363532a8df","number":"A-101","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-29.85,-27.8,5.7,8.1]},{"unit_id":"dd96e6c3-1c0d-5eee-b4b8-c1da0f6f6aeb","number":"A-102","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-23.85,-27.8,5.7,8.1]},{"unit_id":"9201abae-a1fc-5a9d-b70e-c0647e2b1f64","number":"A-103","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-17.85,-27.8,5.7,8.1]},{"unit_id":"347d2f48-efe1-52f9-9fd5-2a9c3d876c44","number":"A-104","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-11.85,-27.8,5.7,8.1]},{"unit_id":"94085289-309e-5483-855c-73df251b3205","number":"A-105","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-5.85,-27.8,5.7,8.1]},{"unit_id":"ce7a8688-adc8-59af-862e-3722968038d7","number":"A-106","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[0.15,-27.8,5.7,8.1]},{"unit_id":"73cfc435-356d-5385-8344-dea59f22fc0e","number":"A-107","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[6.15,-27.8,5.7,8.1]},{"unit_id":"90ef0b8d-a3b6-51bc-a6e7-f1973ff2f0ea","number":"A-108","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[12.15,-27.8,5.7,8.1]},{"unit_id":"39f886a8-739b-5cb5-a1f9-4b29e2a8014f","number":"A-109","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[18.15,-27.8,5.7,8.1]},{"unit_id":"eb94c654-9a58-57ac-89a0-b1998ef30406","number":"A-110","wing":"A","floor":0,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[24.15,-27.8,5.7,8.1]},{"unit_id":"b0843579-86d6-5093-856c-5351016ec2c0","number":"A-201","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-29.85,-27.8,5.7,8.1]},{"unit_id":"5b07b454-925c-5d08-91d1-0d9a17bbd70c","number":"A-202","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-23.85,-27.8,5.7,8.1]},{"unit_id":"b789746b-1758-5dee-a230-8a5da48a8c6a","number":"A-203","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-17.85,-27.8,5.7,8.1]},{"unit_id":"c3e7e61f-3867-5607-9fb8-4329a714fde2","number":"A-204","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-11.85,-27.8,5.7,8.1]},{"unit_id":"d9d180ef-a5fd-55a5-aca3-25da039231c6","number":"A-205","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-5.85,-27.8,5.7,8.1]},{"unit_id":"0260de2c-8343-52da-9a74-07c6b94ce5fd","number":"A-206","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[0.15,-27.8,5.7,8.1]},{"unit_id":"6ff3e5da-5ee4-52ee-b56b-80ff252cea6e","number":"A-207","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[6.15,-27.8,5.7,8.1]},{"unit_id":"020d9fe7-95f2-5039-9c95-a94e5fd607cd","number":"A-208","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[12.15,-27.8,5.7,8.1]},{"unit_id":"ce47d1b9-51e8-5e8b-b1e2-085f565f6fc1","number":"A-209","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[18.15,-27.8,5.7,8.1]},{"unit_id":"998b9568-d932-5eee-b81e-df09083c9ce3","number":"A-210","wing":"A","floor":1,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[24.15,-27.8,5.7,8.1]},{"unit_id":"c929c9e0-df4e-50da-9d7d-a78676c37551","number":"A-301","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-29.85,-27.8,5.7,8.1]},{"unit_id":"9f92cefa-a2fb-59e0-b144-3bcd7d57d47e","number":"A-302","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-23.85,-27.8,5.7,8.1]},{"unit_id":"8743e0e3-cd56-515e-a817-3dc7f3d187c9","number":"A-303","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-17.85,-27.8,5.7,8.1]},{"unit_id":"f711e354-47c8-594c-95dd-23918ecd9435","number":"A-304","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-11.85,-27.8,5.7,8.1]},{"unit_id":"97a5178a-f178-554a-ab44-ae0fe0487940","number":"A-305","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-5.85,-27.8,5.7,8.1]},{"unit_id":"d0fd8264-58b0-50d9-8066-042c46d1d085","number":"A-306","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[0.15,-27.8,5.7,8.1]},{"unit_id":"a528930d-2e01-5878-9b04-012fe4aed294","number":"A-307","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[6.15,-27.8,5.7,8.1]},{"unit_id":"6c7efb76-efaa-513e-8dc0-9938254a3936","number":"A-308","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[12.15,-27.8,5.7,8.1]},{"unit_id":"06cb8f87-74c9-5b91-ac33-1ba24a07c967","number":"A-309","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[18.15,-27.8,5.7,8.1]},{"unit_id":"5a557d18-44d6-5804-80ee-00f75eb2ec08","number":"A-310","wing":"A","floor":2,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[24.15,-27.8,5.7,8.1]},{"unit_id":"54efc891-4dd3-5ea4-9bd2-bd5a67012edb","number":"A-401","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-29.85,-27.8,5.7,8.1]},{"unit_id":"42e7252c-2a0b-5c72-8453-14297bbfffd8","number":"A-402","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-23.85,-27.8,5.7,8.1]},{"unit_id":"4114cdd9-8126-51d8-8d55-da40b9013fea","number":"A-403","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-17.85,-27.8,5.7,8.1]},{"unit_id":"e0abea66-5f31-5223-8efc-b9b87ea7bd9e","number":"A-404","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-11.85,-27.8,5.7,8.1]},{"unit_id":"ef45848e-f62b-57b8-a841-dde7722bfcb0","number":"A-405","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-5.85,-27.8,5.7,8.1]},{"unit_id":"3c7406a9-a0de-5b03-bf15-84ac3ae15b88","number":"A-406","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[0.15,-27.8,5.7,8.1]},{"unit_id":"dfeb7668-d6d7-5ec7-b4f5-705d5ec174ae","number":"A-407","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[6.15,-27.8,5.7,8.1]},{"unit_id":"a1794f03-84b9-5b21-80a8-4c00949defb9","number":"A-408","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[12.15,-27.8,5.7,8.1]},{"unit_id":"5f66f826-ec63-5c09-ad53-a3343352be3c","number":"A-409","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[18.15,-27.8,5.7,8.1]},{"unit_id":"5d45c339-a51a-5c24-bf98-5c5723633da0","number":"A-410","wing":"A","floor":3,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[24.15,-27.8,5.7,8.1]},{"unit_id":"f9be0eb3-6344-5168-af7c-ba3554c49ebd","number":"A-501","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-29.85,-27.8,5.7,8.1]},{"unit_id":"9c611491-04e8-51a5-9225-bb1970788bd6","number":"A-502","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-23.85,-27.8,5.7,8.1]},{"unit_id":"b1aab149-d261-54be-a0df-d14b99906fde","number":"A-503","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-17.85,-27.8,5.7,8.1]},{"unit_id":"30b940e3-ba28-56bc-b168-8d0922bcfb4a","number":"A-504","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-11.85,-27.8,5.7,8.1]},{"unit_id":"a2c048a0-1865-5d47-9b68-5667e037db65","number":"A-505","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[-5.85,-27.8,5.7,8.1]},{"unit_id":"c4b1522b-9384-516a-a8da-459cfe02a732","number":"A-506","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[0.15,-27.8,5.7,8.1]},{"unit_id":"cf34fd21-a8fa-5494-a28b-6524d891a9ab","number":"A-507","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[6.15,-27.8,5.7,8.1]},{"unit_id":"896c4e1d-574c-5ee0-8aa4-917ad79b5731","number":"A-508","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[12.15,-27.8,5.7,8.1]},{"unit_id":"c01e9e02-4729-57aa-bb74-4f62aac918aa","number":"A-509","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[18.15,-27.8,5.7,8.1]},{"unit_id":"a2de8a8e-75af-58af-b914-1d1438bb4bdc","number":"A-510","wing":"A","floor":4,"type":"T2 · 1 chambre","interior_m2":46.2,"terrace_m2":5.7,"geometry":[24.15,-27.8,5.7,8.1]},{"unit_id":"0bb7aa29-1740-52b5-ae58-0ab3d2fb3901","number":"B-101","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-17.85,8.1,4.7]},{"unit_id":"fb777910-960e-5c88-918c-2b2d2dd9224b","number":"B-102","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-12.85,8.1,4.7]},{"unit_id":"4ccb2daf-988e-556a-9d79-46667d6ee8b4","number":"B-103","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-7.85,8.1,4.7]},{"unit_id":"65ac8c4a-b3be-5e2a-a5af-eb944d7d19d6","number":"B-104","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-2.85,8.1,4.7]},{"unit_id":"ab6a4cb3-c03a-547a-9fc4-cbd25fb8d9d5","number":"B-105","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,2.15,8.1,4.7]},{"unit_id":"ddbf9313-01e0-55c4-baed-3e6b7849177c","number":"B-106","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,7.15,8.1,4.7]},{"unit_id":"95c15814-9992-5589-857e-ed125a2f5aac","number":"B-107","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,12.15,8.1,4.7]},{"unit_id":"017336cc-759b-5ad9-9ad8-6bd1518de789","number":"B-108","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,17.15,8.1,4.7]},{"unit_id":"97d6342c-ba10-58ab-85ca-beab2622f0b3","number":"B-109","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,22.15,8.1,4.7]},{"unit_id":"2ad4639e-9000-5c9b-8212-bd0944099ef8","number":"B-110","wing":"B","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,27.15,8.1,4.7]},{"unit_id":"d501cacb-a501-5577-982a-0ba002f2e036","number":"B-201","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-17.85,8.1,4.7]},{"unit_id":"7038b78b-1bea-5c18-b77a-99734a0fc48d","number":"B-202","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-12.85,8.1,4.7]},{"unit_id":"5dff3d66-0269-5174-ba6b-63fb763663dd","number":"B-203","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-7.85,8.1,4.7]},{"unit_id":"ffab7948-9947-52c0-bacf-5ecb7c245903","number":"B-204","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-2.85,8.1,4.7]},{"unit_id":"3f7e1009-8aae-5c5d-a9c1-664f8c9c6989","number":"B-205","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,2.15,8.1,4.7]},{"unit_id":"38c4d6de-5b94-5428-9cef-fbb5083a75cf","number":"B-206","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,7.15,8.1,4.7]},{"unit_id":"d757a53f-d03c-58f4-a2a8-74c0bd2a2939","number":"B-207","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,12.15,8.1,4.7]},{"unit_id":"a3f50d82-1e97-5188-85a6-1ed8447e9400","number":"B-208","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,17.15,8.1,4.7]},{"unit_id":"00761418-4687-55b6-a2ca-b2355ea6cd3b","number":"B-209","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,22.15,8.1,4.7]},{"unit_id":"3231c5f2-48cc-5fe2-9321-6a3f28e53e66","number":"B-210","wing":"B","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,27.15,8.1,4.7]},{"unit_id":"00716861-1fe9-5d3c-8635-c4817ffa192a","number":"B-301","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-17.85,8.1,4.7]},{"unit_id":"42135a0f-ebb2-50e2-8c9b-3bb821bdd16d","number":"B-302","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-12.85,8.1,4.7]},{"unit_id":"b4dc5bab-3bd6-5d61-ae5d-9cfad6d57aaa","number":"B-303","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-7.85,8.1,4.7]},{"unit_id":"a7855f00-b10f-5c24-ab24-79eed3f39292","number":"B-304","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-2.85,8.1,4.7]},{"unit_id":"1015acce-72a8-505f-93c6-7f9bf03d5270","number":"B-305","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,2.15,8.1,4.7]},{"unit_id":"5ed2b616-0c2c-5db5-9c61-3dbf0e2af8a1","number":"B-306","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,7.15,8.1,4.7]},{"unit_id":"0c757ef5-f1be-5caa-ab00-94858ae3228f","number":"B-307","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,12.15,8.1,4.7]},{"unit_id":"a5f6e5d5-d500-5f49-9264-b34b0e38c10c","number":"B-308","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,17.15,8.1,4.7]},{"unit_id":"cf990359-4992-5177-904f-526aa296fc34","number":"B-309","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,22.15,8.1,4.7]},{"unit_id":"9e908996-e20f-5c5e-b8c2-45028e6e33c6","number":"B-310","wing":"B","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,27.15,8.1,4.7]},{"unit_id":"b36beed2-7350-5445-9f78-38110165d315","number":"B-401","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-17.85,8.1,4.7]},{"unit_id":"d471b82b-b20c-59d7-b5f8-700308ffc516","number":"B-402","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-12.85,8.1,4.7]},{"unit_id":"696417ff-aadd-5976-b8fd-82e74574fe8c","number":"B-403","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-7.85,8.1,4.7]},{"unit_id":"17b8cf8f-fd2a-51c9-8c9e-b3c23ae516bb","number":"B-404","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-2.85,8.1,4.7]},{"unit_id":"5a376342-eb00-5a10-9c2e-398e2dd64613","number":"B-405","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,2.15,8.1,4.7]},{"unit_id":"a47701c4-c6a3-5a31-88ba-b493d8f1d25a","number":"B-406","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,7.15,8.1,4.7]},{"unit_id":"753d5eee-17dd-5682-9a09-eb6b4ecaf84c","number":"B-407","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,12.15,8.1,4.7]},{"unit_id":"eeb7f337-e9f9-5a27-8aa8-cbbd026f1735","number":"B-408","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,17.15,8.1,4.7]},{"unit_id":"a9266636-b178-5095-95f9-6f4fdfde668c","number":"B-409","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,22.15,8.1,4.7]},{"unit_id":"96d2cf72-e557-5d5c-b2c5-ce9151e05c95","number":"B-410","wing":"B","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,27.15,8.1,4.7]},{"unit_id":"cd744d12-b53e-5e7a-a4f2-2f4958cf237e","number":"B-501","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-17.85,8.1,4.7]},{"unit_id":"0ba3c3af-e557-5c7a-8486-00b3b0d5cda6","number":"B-502","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-12.85,8.1,4.7]},{"unit_id":"d7c49bb6-2861-54e5-ae3a-f751d8f6cdf9","number":"B-503","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-7.85,8.1,4.7]},{"unit_id":"a35a4c41-c699-5ad4-b359-ef991d7ac6ed","number":"B-504","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,-2.85,8.1,4.7]},{"unit_id":"5f3ff94c-a7b4-5889-857d-f122e174e676","number":"B-505","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,2.15,8.1,4.7]},{"unit_id":"e7b1a460-f928-5d05-bc34-352265bbfa43","number":"B-506","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,7.15,8.1,4.7]},{"unit_id":"2c4ecf20-8024-516a-bb2c-9a74a32b73db","number":"B-507","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,12.15,8.1,4.7]},{"unit_id":"b9f88dbe-d558-5453-816c-ba530b4669ce","number":"B-508","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,17.15,8.1,4.7]},{"unit_id":"243dad1e-6ba5-5b39-8e66-f24d64e31044","number":"B-509","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,22.15,8.1,4.7]},{"unit_id":"e7d4e827-a44f-560d-bd87-e872f5551a87","number":"B-510","wing":"B","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[-29.8,27.15,8.1,4.7]},{"unit_id":"40daab41-cdc0-5215-b605-35bc7b34fa10","number":"C-101","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-17.85,8.1,4.7]},{"unit_id":"8bceb80d-eaa6-51da-bd2d-0f12434f88c4","number":"C-102","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-12.85,8.1,4.7]},{"unit_id":"99bd64c9-cc76-549d-9afe-fa3b6c09f0d0","number":"C-103","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-7.85,8.1,4.7]},{"unit_id":"f090fb99-a022-5ef1-b257-624e044ce74a","number":"C-104","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-2.85,8.1,4.7]},{"unit_id":"bf962b1e-3e33-5d94-b685-84d6e3108988","number":"C-105","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,2.15,8.1,4.7]},{"unit_id":"05555554-b755-5cb4-9491-bd6523a3fbe8","number":"C-106","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,7.15,8.1,4.7]},{"unit_id":"d47fdc43-689e-5829-911d-fdc2aceff771","number":"C-107","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,12.15,8.1,4.7]},{"unit_id":"8445c298-e88b-5c04-972c-dc2c0954a6f7","number":"C-108","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,17.15,8.1,4.7]},{"unit_id":"d5f2a048-2692-5129-8e8f-84f966865a6a","number":"C-109","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,22.15,8.1,4.7]},{"unit_id":"fdbd9418-8c33-5b90-a5e9-a4706bde49ed","number":"C-110","wing":"C","floor":0,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,27.15,8.1,4.7]},{"unit_id":"95be4309-ba5a-5184-b98e-ba3080215935","number":"C-201","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-17.85,8.1,4.7]},{"unit_id":"7b39b62a-68a8-524d-8294-c7a08f3c4d82","number":"C-202","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-12.85,8.1,4.7]},{"unit_id":"2d20b12b-9c3c-50b5-9598-2bd3c4428054","number":"C-203","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-7.85,8.1,4.7]},{"unit_id":"90e1b706-72c3-52d5-975b-5f815e01ba18","number":"C-204","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-2.85,8.1,4.7]},{"unit_id":"4e3a4282-17ae-5d22-acc1-1f445f9560c7","number":"C-205","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,2.15,8.1,4.7]},{"unit_id":"88cbb1cc-337e-59c1-b725-c0113ca1a255","number":"C-206","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,7.15,8.1,4.7]},{"unit_id":"b8c5a5d4-1929-5c69-b87f-ece3d96ce128","number":"C-207","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,12.15,8.1,4.7]},{"unit_id":"6131f466-28cb-5540-b4b4-e17921e996d6","number":"C-208","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,17.15,8.1,4.7]},{"unit_id":"78bb3e63-c2fa-5485-b2a0-be4f34732949","number":"C-209","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,22.15,8.1,4.7]},{"unit_id":"b9451d38-fa13-5c47-9ad2-f936ed151721","number":"C-210","wing":"C","floor":1,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,27.15,8.1,4.7]},{"unit_id":"957f6866-3222-5def-b2ca-8956f21aca9f","number":"C-301","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-17.85,8.1,4.7]},{"unit_id":"5c7bb823-1f57-546a-b689-7e6b33216a49","number":"C-302","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-12.85,8.1,4.7]},{"unit_id":"d6e4272d-23ee-5975-85d7-b2482137c700","number":"C-303","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-7.85,8.1,4.7]},{"unit_id":"f51236f2-fb75-5f9f-96bb-9956ec078138","number":"C-304","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-2.85,8.1,4.7]},{"unit_id":"fb42bcc1-10fa-5e21-8e5d-e44fe5a4fe48","number":"C-305","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,2.15,8.1,4.7]},{"unit_id":"2a5013a1-8b15-5554-8529-40e1bcc0bd33","number":"C-306","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,7.15,8.1,4.7]},{"unit_id":"80c844e2-13bb-5a4a-85f6-e36f925bca04","number":"C-307","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,12.15,8.1,4.7]},{"unit_id":"0ca49140-b32d-559c-854a-e0b7c622a4f6","number":"C-308","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,17.15,8.1,4.7]},{"unit_id":"39cbc643-2376-55ec-94bc-8f3927f286db","number":"C-309","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,22.15,8.1,4.7]},{"unit_id":"fb7a9c7f-dd87-546c-ae52-47f2f3110261","number":"C-310","wing":"C","floor":2,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,27.15,8.1,4.7]},{"unit_id":"803628a8-0931-540d-a1ca-a2cb2996279f","number":"C-401","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-17.85,8.1,4.7]},{"unit_id":"8ec0ae87-374a-576b-91b1-1befed5de67c","number":"C-402","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-12.85,8.1,4.7]},{"unit_id":"b9f9fad2-e36b-50a9-b977-e1725a024704","number":"C-403","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-7.85,8.1,4.7]},{"unit_id":"76a2c224-0683-5b0c-bf61-2abdf122cd84","number":"C-404","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-2.85,8.1,4.7]},{"unit_id":"25ea681c-8e5c-5cef-a44f-54dc126cbc3f","number":"C-405","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,2.15,8.1,4.7]},{"unit_id":"871de1f3-5d40-52ca-820b-64750227ba25","number":"C-406","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,7.15,8.1,4.7]},{"unit_id":"df0493b4-7d4b-5b5a-a36d-132e351f4df5","number":"C-407","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,12.15,8.1,4.7]},{"unit_id":"fba12ab9-42bb-5360-bd82-9194a2748ab0","number":"C-408","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,17.15,8.1,4.7]},{"unit_id":"756d1d8b-d6f6-55e7-add4-131c458bcdde","number":"C-409","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,22.15,8.1,4.7]},{"unit_id":"5124bc5d-08d8-53a1-a6d6-c002c329a337","number":"C-410","wing":"C","floor":3,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,27.15,8.1,4.7]},{"unit_id":"58b4a313-1ee9-5995-8928-7cb51c7cd5b2","number":"C-501","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-17.85,8.1,4.7]},{"unit_id":"01165619-8453-5e03-bef2-efa529326e20","number":"C-502","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-12.85,8.1,4.7]},{"unit_id":"f79939a1-d67d-544b-926d-b7cb76cb819e","number":"C-503","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-7.85,8.1,4.7]},{"unit_id":"ff9b0b13-6bb1-5cde-81b9-30066d337af5","number":"C-504","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,-2.85,8.1,4.7]},{"unit_id":"b8b447dd-9dbf-5141-8f38-8aac2f15dacc","number":"C-505","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,2.15,8.1,4.7]},{"unit_id":"e1f7ee48-9223-5d3a-8dba-0ec06aca2abf","number":"C-506","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,7.15,8.1,4.7]},{"unit_id":"55948fa1-a630-5452-b58c-cbe61141eeda","number":"C-507","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,12.15,8.1,4.7]},{"unit_id":"848edf75-0d39-553a-b2e9-1eefdeb5a9c9","number":"C-508","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,17.15,8.1,4.7]},{"unit_id":"948284bf-a99d-57a1-a1ac-e770de0339cf","number":"C-509","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,22.15,8.1,4.7]},{"unit_id":"837a25e2-8c29-58b2-a536-d52a41d4d476","number":"C-510","wing":"C","floor":4,"type":"Studio","interior_m2":38.1,"terrace_m2":4.7,"geometry":[21.7,27.15,8.1,4.7]}].map(u => Object.freeze(u)));
+const palette = Object.freeze({available:'#a7c5b0',option:'#e7d795',reserved:'#dfb28c',sold:'#beb5cd',paid:'#d99587',unavailable:'#b7bbb7',unknown:'#d3d5d1'});
+const statusLabels = Object.freeze({available:'Disponible',option:'Option temporaire',reserved:'Réservation confirmée',sold:'Vendu · non soldé',paid:'Entièrement payé',unavailable:'Indisponible',unknown:'Statut inconnu'});
+function statusKey(record) {
+  if (!record) return 'unknown';
+  if (record.payment_status === 'paid') return 'paid';
+  return ['available','option','reserved','sold','unavailable'].includes(record.commercial_status) ? record.commercial_status : 'unknown';
+}
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const color=(hex,k=1)=>{const a=hex.match(/\w\w/g).map(x=>clamp(Math.round(parseInt(x,16)*k),0,255));return `rgb(${a.join(',')})`;};
+const floorName=f=>f===0?'RDC':`R+${f}`;
+
+/** Mount only into a dedicated empty container. Host owns all commercial data. */
+function mount(container,{data=[],onSelect=()=>{},onHover=()=>{}}={}) {
+  if(!container || !container.ownerDocument) throw new TypeError('Conteneur DOM requis');
+  const doc=container.ownerDocument, canvas=doc.createElement('canvas');
+  canvas.setAttribute('aria-label','Maquette 3D. Glisser pour tourner, molette pour zoomer. Utiliser la liste des appartements pour une sélection au clavier.');
+  canvas.tabIndex=0; canvas.style.cssText='width:100%;height:100%;display:block;touch-action:none;outline-offset:-4px';
+  container.append(canvas);
+  const ctx=canvas.getContext('2d');
+  if(!ctx){canvas.remove();throw new Error('Canvas indisponible. Utiliser la liste des appartements.');}
+  let records=new Map(),dead=false,frame=0,w=1,h=1,faces=[],pickFaces=[],hover=null,drag=null;
+  const state={yaw:-.55,tilt:.60,zoom:1,view:'3d',floor:'all',wing:'all',status:'all',query:'',exploded:false,selected:null,structureOpacity:.45};
+  const byId=new Map(units.map(u=>[u.unit_id,u]));
+  const listeners=[];
+  function listen(target,name,fn,options){target.addEventListener(name,fn,options);listeners.push(()=>target.removeEventListener(name,fn,options));}
+  function project(x,y,z){
+    const a=state.view==='top'?0:state.yaw,t=state.view==='top'?Math.PI/2:state.tilt;
+    const dx=x*Math.cos(a)-z*Math.sin(a),dz=x*Math.sin(a)+z*Math.cos(a);
+    const extent=state.exploded&&state.floor==='all'?125:105;
+    const s=Math.min(w/extent,h/(state.view==='top'?90:82))*state.zoom;
+    return {x:w/2+dx*s,y:h*.56+(dz*Math.sin(t)-(y-(state.exploded?17:7))*Math.cos(t))*s,d:dz*Math.cos(t)+y*Math.sin(t)};
+  }
+  function face(points,fill,id=null,alpha=1,stroke='#ffffff',width=.6){
+    const p=points.map(v=>project(...v));faces.push({p,fill,id,alpha,stroke,width,d:p.reduce((n,v)=>n+v.d,0)/p.length});
+  }
+  function box(x,y,z,dx,dy,dz,fill,id=null,alpha=1,outline='#f7f6f0'){
+    const X=x+dx,Y=y+dy,Z=z+dz;
+    const yaw=state.view==='top'?0:state.yaw,tilt=state.view==='top'?Math.PI/2:state.tilt;
+    face([[x,Y,z],[X,Y,z],[X,Y,Z],[x,Y,Z]],color(fill,1.06),id,alpha,outline);
+    if(Math.cos(tilt)>.001){
+      if(Math.sin(yaw)>=0)face([[X,y,z],[X,y,Z],[X,Y,Z],[X,Y,z]],color(fill,.83),id,alpha,outline);
+      else face([[x,y,Z],[x,y,z],[x,Y,z],[x,Y,Z]],color(fill,.84),id,alpha,outline);
+      if(Math.cos(yaw)>=0)face([[X,y,Z],[x,y,Z],[x,Y,Z],[X,Y,Z]],color(fill,.94),id,alpha,outline);
+      else face([[x,y,z],[X,y,z],[X,Y,z],[x,Y,z]],color(fill,.9),id,alpha,outline);
+    }
+  }
+  function visible(u){return (state.floor==='all'||u.floor===Number(state.floor))&&(state.wing==='all'||u.wing===state.wing)&&(state.status==='all'||statusKey(records.get(u.unit_id))===state.status)&&(!state.query||u.number.toLowerCase().includes(state.query.toLowerCase()));}
+  function floorY(f){return f*(3.3+(state.exploded?7:0));}
+  function path(p){ctx.beginPath();p.forEach((v,i)=>i?ctx.lineTo(v.x,v.y):ctx.moveTo(v.x,v.y));ctx.closePath();}
+  function label(text,x,y,z,fill='#667467'){
+    const p=project(x,y,z);ctx.globalAlpha=1;ctx.font='500 10px "Segoe UI", sans-serif';ctx.textAlign='center';
+    const width=ctx.measureText(text).width+16;ctx.fillStyle='rgba(250,250,245,.9)';ctx.beginPath();ctx.roundRect(p.x-width/2,p.y-10,width,20,5);ctx.fill();ctx.fillStyle=fill;ctx.fillText(text,p.x,p.y+3);
+  }
+  function draw(){
+    frame=0;if(dead)return;
+    const r=canvas.getBoundingClientRect();w=Math.max(1,r.width);h=Math.max(1,r.height);
+    const dpr=Math.min(2,doc.defaultView.devicePixelRatio||1);
+    if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}
+    ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);faces=[];pickFaces=[];
+    box(-37,-1.3,-35,74,.8,77,'#e1e6d8',null,1,'#d4ddcd');
+    box(-33,-.5,-31,66,.2,70,'#eae7dc',null,1,'#eae7dc');
+    box(-18,-.2,-16,36,.12,45,'#d2dec8',null,1,'#d2dec8');
+    box(-9,-.06,-9,18,.10,32,'#f1ede1');
+    box(-6,.08,-6,12,.10,26,'#a7ccc8',null,1,'#f6f3e8');
+    // Water lines, terrace furniture, and low poly planting are non-selectable.
+    for(let z=-4;z<18;z+=3)face([[-5,.2,z],[4,.2,z],[4,.2,z+.12],[-5,.2,z+.12]],'#c4deda');
+    for(let z=-4;z<19;z+=5){box(8,.2,z,1.8,.2,3,'#f7f1e2');box(-10,.2,z,1.8,.2,3,'#f7f1e2');}
+    const ground=faces;faces=[];
+    for(const [x,z] of [[-15,-11],[15,-11],[-15,10],[15,10],[-15,25],[15,25],[-33,35],[33,35],[-33,-30],[33,-30]]){
+      box(x-.15,0,z-.15,.3,2,.3,'#a49a82');
+      const top=[x,4.4,z],ring=[[x-2,2,z],[x,2,z-2],[x+2,2,z],[x,2,z+2]];
+      for(let k=0;k<4;k++)face([top,ring[k],ring[(k+1)%4]],k%2?'#a7bfa2':'#bbceb0',null,.85,'#b5c7ab',.3);
+    }
+    const wings=[{id:'A',x:-30,z:-28,dx:60,dz:10},{id:'B',x:-30,z:-18,dx:10,dz:50},{id:'C',x:20,z:-18,dx:10,dz:50}];
+    for(let f=0;f<5;f++){
+      if(state.floor!=='all'&&f!==Number(state.floor))continue;
+      const y=floorY(f);
+      for(const b of wings){
+        if(state.wing!=='all'&&b.id!==state.wing)continue;
+        // Subdivide long slabs to preserve depth ordering during rotation.
+        for(let j=0;j<10;j++){
+          if(b.id==='A'){
+            box(-30+j*6,y,-28,6,.22,10,'#e9eadf',null,state.structureOpacity,'#e0e3d8');
+            box(-30+j*6,y+.23,-19.5,6,.12,1.5,'#eeeadd',null,.75);
+          }else{
+            box(b.x,y,-18+j*5,10,.22,5,'#e9eadf',null,state.structureOpacity,'#e0e3d8');
+            box(b.id==='B'?-21.5:20,y+.23,-18+j*5,1.5,.12,5,'#eeeadd',null,.75);
+          }
+        }
+      }
+      for(const u of units.filter(u=>u.floor===f)){
+        if(state.wing!=='all'&&u.wing!==state.wing)continue;
+        const [x,z,dx,dz]=u.geometry;
+        const active=visible(u),selected=state.selected===u.unit_id,hot=hover===u.unit_id;
+        let fill=active?palette[statusKey(records.get(u.unit_id))]:'#e2e5dd';
+        box(x,y+.24,z,dx,2.65,dz,fill,active?u.unit_id:null,active?(selected?1:hot?.95:.76):.15,selected?'#254f44':hot?'#ffffff':'#eef0e7');
+        // Private terrace of one metre depth, outside the shared corridor.
+        const terrace=u.wing==='A'?[x,y+.24,z-1,dx,.12,1]:[u.wing==='B'?x-1:x+dx,y+.24,z,1,.12,dz];
+        box(...terrace,'#eee9d9',active?u.unit_id:null,active?.7:.12,selected?'#254f44':'#e2e2d4');
+        // A thin cream lintel makes each storey readable.
+        if(active && state.view!=='top')box(x,y+2.88,z,dx,.12,dz,'#f3f0e5',u.unit_id,.62,selected?'#254f44':'#ecebdd');
+      }
+    }
+    faces.sort((a,b)=>a.d-b.d);
+    for(const f of [...ground,...faces]){ctx.globalAlpha=f.alpha;path(f.p);ctx.fillStyle=f.fill;ctx.fill();ctx.strokeStyle=f.stroke;ctx.lineWidth=f.id&&f.id===state.selected?1.8:f.width;ctx.stroke();if(f.id)pickFaces.push(f);}
+    ctx.globalAlpha=1;
+    if(state.floor!=='all')for(const u of units.filter(visible)){const [x,z,dx,dz]=u.geometry;label(u.number,x+dx/2,floorY(u.floor)+3,z+dz/2,'#344d42');}
+    else {const y=floorY(4)+5;if(state.wing==='all'||state.wing==='A')label('A · AILE NORD',0,y,-24);if(state.wing==='all'||state.wing==='B')label('B · AILE OUEST',-25,y,9);if(state.wing==='all'||state.wing==='C')label('C · AILE EST',25,y,9);}
+    label('JARDIN & PISCINE',0,.4,29);
+  }
+  function invalidate(){if(!dead&&!frame)frame=doc.defaultView.requestAnimationFrame(draw);}
+  function pick(e){const r=canvas.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;for(let i=pickFaces.length-1;i>=0;i--){const f=pickFaces[i];let inside=false;for(let j=0,k=f.p.length-1;j<f.p.length;k=j++){const a=f.p[j],b=f.p[k];if((a.y>y)!==(b.y>y)&&x<(b.x-a.x)*(y-a.y)/(b.y-a.y)+a.x)inside=!inside;}if(inside)return f.id;}return null;}
+  function select(id){if(dead)return;if(id!==null&&!byId.has(id))throw new Error('Unité inconnue');state.selected=id;invalidate();onSelect(id?{schema:manifest.schema,type:'unit-selected',unit_id:id}:null);}
+  listen(canvas,'pointerdown',e=>{if(e.button!==0)return;drag={id:e.pointerId,x:e.clientX,y:e.clientY,sx:e.clientX,sy:e.clientY,moved:false};canvas.setPointerCapture(e.pointerId);});
+  listen(canvas,'pointermove',e=>{if(drag&&drag.id===e.pointerId){if(Math.hypot(e.clientX-drag.sx,e.clientY-drag.sy)>5)drag.moved=true;if(drag.moved&&state.view==='3d'){state.yaw=clamp(state.yaw+(e.clientX-drag.x)*.007,-Math.PI,Math.PI);state.tilt=clamp(state.tilt+(e.clientY-drag.y)*.005,.25,1.25);invalidate();}drag.x=e.clientX;drag.y=e.clientY;}else{const id=pick(e);if(id!==hover){hover=id;canvas.style.cursor=id?'pointer':'grab';onHover(id);invalidate();}}});
+  listen(canvas,'pointerup',e=>{if(drag?.id===e.pointerId){if(!drag.moved)select(pick(e));drag=null;}});
+  listen(canvas,'pointercancel',()=>{drag=null;});listen(canvas,'lostpointercapture',()=>{drag=null;});
+  listen(canvas,'pointerleave',()=>{hover=null;onHover(null);invalidate();});
+  listen(canvas,'wheel',e=>{e.preventDefault();state.zoom=clamp(state.zoom*Math.exp(-e.deltaY*.001),.65,2.4);invalidate();},{passive:false});
+  listen(canvas,'keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','Escape','Home'].includes(e.key)){e.preventDefault();if(e.key==='Escape')select(null);else if(e.key==='Home')reset();else if(e.key==='+')state.zoom=clamp(state.zoom+.1,.65,2.4);else if(e.key==='-')state.zoom=clamp(state.zoom-.1,.65,2.4);else if(e.key==='ArrowLeft')state.yaw=clamp(state.yaw-.1,-Math.PI,Math.PI);else if(e.key==='ArrowRight')state.yaw=clamp(state.yaw+.1,-Math.PI,Math.PI);else state.tilt=clamp(state.tilt+(e.key==='ArrowUp'?.1:-.1),.25,1.25);invalidate();}});
+  const observer=new ResizeObserver(invalidate);observer.observe(container);
+  function update(data){
+    if(dead)throw new Error('Visualiseur détruit');if(!Array.isArray(data))throw new TypeError('Tableau de données requis');
+    const next=new Map();for(const r of data){if(!r||!byId.has(r.unit_id))throw new Error('Identifiant absent du plan');if(next.has(r.unit_id))throw new Error('Identifiant dupliqué');next.set(r.unit_id,Object.freeze({...r}));}
+    records=next;invalidate(); // Full replacement: omitted IDs become unknown.
+  }
+  function setView(options={}){
+    if(dead)throw new Error('Visualiseur détruit');
+    if(options.floor!==undefined&&!['all',0,1,2,3,4,'0','1','2','3','4'].includes(options.floor))throw new Error('Étage invalide');
+    if(options.wing!==undefined&&!['all','A','B','C'].includes(options.wing))throw new Error('Aile invalide');
+    if(options.view!==undefined&&!['top','3d'].includes(options.view))throw new Error('Vue invalide');
+    if(options.status!==undefined&&options.status!=='all'&&!Object.hasOwn(palette,options.status))throw new Error('Statut invalide');
+    for(const key of ['floor','wing','view','status'])if(options[key]!==undefined)state[key]=options[key];
+    if(options.query!==undefined)state.query=String(options.query).slice(0,80);
+    if(options.exploded!==undefined)state.exploded=Boolean(options.exploded);
+    if(Number.isFinite(options.zoom))state.zoom=clamp(options.zoom,.65,2.4);
+    if(Number.isFinite(options.structureOpacity))state.structureOpacity=clamp(options.structureOpacity,.15,.8);
+    if(state.selected&&!visible(byId.get(state.selected)))select(null);
+    invalidate();
+  }
+  function reset(){Object.assign(state,{yaw:-.55,tilt:.60,zoom:1,view:'3d',exploded:false});invalidate();}
+  try{update(data);}catch(error){observer.disconnect();listeners.forEach(fn=>fn());canvas.remove();throw error;}
+  return Object.freeze({update,setView,select,reset,getVisibleUnits:()=>units.filter(visible),getState:()=>({...state}),destroy(){if(dead)return;dead=true;observer.disconnect();listeners.forEach(fn=>fn());doc.defaultView.cancelAnimationFrame(frame);canvas.remove();records.clear();faces=[];pickFaces=[];}});
+}
+
+/** Données fictives pour l'aperçu uniquement. Ne pas importer comme états réels. */
+const demoData = [
+  {
+    "unit_id": "dc5f38bb-c5ed-534d-9bea-c7363532a8df",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "dd96e6c3-1c0d-5eee-b4b8-c1da0f6f6aeb",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "9201abae-a1fc-5a9d-b70e-c0647e2b1f64",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "347d2f48-efe1-52f9-9fd5-2a9c3d876c44",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "94085289-309e-5483-855c-73df251b3205",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "ce7a8688-adc8-59af-862e-3722968038d7",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "73cfc435-356d-5385-8344-dea59f22fc0e",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "90ef0b8d-a3b6-51bc-a6e7-f1973ff2f0ea",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "39f886a8-739b-5cb5-a1f9-4b29e2a8014f",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "eb94c654-9a58-57ac-89a0-b1998ef30406",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "b0843579-86d6-5093-856c-5351016ec2c0",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "5b07b454-925c-5d08-91d1-0d9a17bbd70c",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "b789746b-1758-5dee-a230-8a5da48a8c6a",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "c3e7e61f-3867-5607-9fb8-4329a714fde2",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "d9d180ef-a5fd-55a5-aca3-25da039231c6",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "0260de2c-8343-52da-9a74-07c6b94ce5fd",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "6ff3e5da-5ee4-52ee-b56b-80ff252cea6e",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "020d9fe7-95f2-5039-9c95-a94e5fd607cd",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "ce47d1b9-51e8-5e8b-b1e2-085f565f6fc1",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "998b9568-d932-5eee-b81e-df09083c9ce3",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "c929c9e0-df4e-50da-9d7d-a78676c37551",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "9f92cefa-a2fb-59e0-b144-3bcd7d57d47e",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "8743e0e3-cd56-515e-a817-3dc7f3d187c9",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "f711e354-47c8-594c-95dd-23918ecd9435",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "97a5178a-f178-554a-ab44-ae0fe0487940",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "d0fd8264-58b0-50d9-8066-042c46d1d085",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "a528930d-2e01-5878-9b04-012fe4aed294",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "6c7efb76-efaa-513e-8dc0-9938254a3936",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "06cb8f87-74c9-5b91-ac33-1ba24a07c967",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "5a557d18-44d6-5804-80ee-00f75eb2ec08",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "54efc891-4dd3-5ea4-9bd2-bd5a67012edb",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "42e7252c-2a0b-5c72-8453-14297bbfffd8",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "4114cdd9-8126-51d8-8d55-da40b9013fea",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "e0abea66-5f31-5223-8efc-b9b87ea7bd9e",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "ef45848e-f62b-57b8-a841-dde7722bfcb0",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "3c7406a9-a0de-5b03-bf15-84ac3ae15b88",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "dfeb7668-d6d7-5ec7-b4f5-705d5ec174ae",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "a1794f03-84b9-5b21-80a8-4c00949defb9",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "5f66f826-ec63-5c09-ad53-a3343352be3c",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "5d45c339-a51a-5c24-bf98-5c5723633da0",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "f9be0eb3-6344-5168-af7c-ba3554c49ebd",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "9c611491-04e8-51a5-9225-bb1970788bd6",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "b1aab149-d261-54be-a0df-d14b99906fde",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "30b940e3-ba28-56bc-b168-8d0922bcfb4a",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "a2c048a0-1865-5d47-9b68-5667e037db65",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "c4b1522b-9384-516a-a8da-459cfe02a732",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "cf34fd21-a8fa-5494-a28b-6524d891a9ab",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "896c4e1d-574c-5ee0-8aa4-917ad79b5731",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "c01e9e02-4729-57aa-bb74-4f62aac918aa",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "a2de8a8e-75af-58af-b914-1d1438bb4bdc",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "0bb7aa29-1740-52b5-ae58-0ab3d2fb3901",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "fb777910-960e-5c88-918c-2b2d2dd9224b",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "4ccb2daf-988e-556a-9d79-46667d6ee8b4",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "65ac8c4a-b3be-5e2a-a5af-eb944d7d19d6",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "ab6a4cb3-c03a-547a-9fc4-cbd25fb8d9d5",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "ddbf9313-01e0-55c4-baed-3e6b7849177c",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "95c15814-9992-5589-857e-ed125a2f5aac",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "017336cc-759b-5ad9-9ad8-6bd1518de789",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "97d6342c-ba10-58ab-85ca-beab2622f0b3",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "2ad4639e-9000-5c9b-8212-bd0944099ef8",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "d501cacb-a501-5577-982a-0ba002f2e036",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "7038b78b-1bea-5c18-b77a-99734a0fc48d",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "5dff3d66-0269-5174-ba6b-63fb763663dd",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "ffab7948-9947-52c0-bacf-5ecb7c245903",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "3f7e1009-8aae-5c5d-a9c1-664f8c9c6989",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "38c4d6de-5b94-5428-9cef-fbb5083a75cf",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "d757a53f-d03c-58f4-a2a8-74c0bd2a2939",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "a3f50d82-1e97-5188-85a6-1ed8447e9400",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "00761418-4687-55b6-a2ca-b2355ea6cd3b",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "3231c5f2-48cc-5fe2-9321-6a3f28e53e66",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "00716861-1fe9-5d3c-8635-c4817ffa192a",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "42135a0f-ebb2-50e2-8c9b-3bb821bdd16d",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "b4dc5bab-3bd6-5d61-ae5d-9cfad6d57aaa",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "a7855f00-b10f-5c24-ab24-79eed3f39292",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "1015acce-72a8-505f-93c6-7f9bf03d5270",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "5ed2b616-0c2c-5db5-9c61-3dbf0e2af8a1",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "0c757ef5-f1be-5caa-ab00-94858ae3228f",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "a5f6e5d5-d500-5f49-9264-b34b0e38c10c",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "cf990359-4992-5177-904f-526aa296fc34",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "9e908996-e20f-5c5e-b8c2-45028e6e33c6",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "b36beed2-7350-5445-9f78-38110165d315",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "d471b82b-b20c-59d7-b5f8-700308ffc516",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "696417ff-aadd-5976-b8fd-82e74574fe8c",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "17b8cf8f-fd2a-51c9-8c9e-b3c23ae516bb",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "5a376342-eb00-5a10-9c2e-398e2dd64613",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "a47701c4-c6a3-5a31-88ba-b493d8f1d25a",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "753d5eee-17dd-5682-9a09-eb6b4ecaf84c",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "eeb7f337-e9f9-5a27-8aa8-cbbd026f1735",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "a9266636-b178-5095-95f9-6f4fdfde668c",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "96d2cf72-e557-5d5c-b2c5-ce9151e05c95",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "cd744d12-b53e-5e7a-a4f2-2f4958cf237e",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "0ba3c3af-e557-5c7a-8486-00b3b0d5cda6",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "d7c49bb6-2861-54e5-ae3a-f751d8f6cdf9",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "a35a4c41-c699-5ad4-b359-ef991d7ac6ed",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "5f3ff94c-a7b4-5889-857d-f122e174e676",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "e7b1a460-f928-5d05-bc34-352265bbfa43",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "2c4ecf20-8024-516a-bb2c-9a74a32b73db",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "b9f88dbe-d558-5453-816c-ba530b4669ce",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "243dad1e-6ba5-5b39-8e66-f24d64e31044",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "e7d4e827-a44f-560d-bd87-e872f5551a87",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "40daab41-cdc0-5215-b605-35bc7b34fa10",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "8bceb80d-eaa6-51da-bd2d-0f12434f88c4",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "99bd64c9-cc76-549d-9afe-fa3b6c09f0d0",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "f090fb99-a022-5ef1-b257-624e044ce74a",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "bf962b1e-3e33-5d94-b685-84d6e3108988",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "05555554-b755-5cb4-9491-bd6523a3fbe8",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "d47fdc43-689e-5829-911d-fdc2aceff771",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "8445c298-e88b-5c04-972c-dc2c0954a6f7",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "d5f2a048-2692-5129-8e8f-84f966865a6a",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "fdbd9418-8c33-5b90-a5e9-a4706bde49ed",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "95be4309-ba5a-5184-b98e-ba3080215935",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "7b39b62a-68a8-524d-8294-c7a08f3c4d82",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "2d20b12b-9c3c-50b5-9598-2bd3c4428054",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "90e1b706-72c3-52d5-975b-5f815e01ba18",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "4e3a4282-17ae-5d22-acc1-1f445f9560c7",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "88cbb1cc-337e-59c1-b725-c0113ca1a255",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "b8c5a5d4-1929-5c69-b87f-ece3d96ce128",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "6131f466-28cb-5540-b4b4-e17921e996d6",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "78bb3e63-c2fa-5485-b2a0-be4f34732949",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "b9451d38-fa13-5c47-9ad2-f936ed151721",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "957f6866-3222-5def-b2ca-8956f21aca9f",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "5c7bb823-1f57-546a-b689-7e6b33216a49",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "d6e4272d-23ee-5975-85d7-b2482137c700",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "f51236f2-fb75-5f9f-96bb-9956ec078138",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "fb42bcc1-10fa-5e21-8e5d-e44fe5a4fe48",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "2a5013a1-8b15-5554-8529-40e1bcc0bd33",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "80c844e2-13bb-5a4a-85f6-e36f925bca04",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "0ca49140-b32d-559c-854a-e0b7c622a4f6",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "39cbc643-2376-55ec-94bc-8f3927f286db",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "fb7a9c7f-dd87-546c-ae52-47f2f3110261",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "803628a8-0931-540d-a1ca-a2cb2996279f",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "8ec0ae87-374a-576b-91b1-1befed5de67c",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "b9f9fad2-e36b-50a9-b977-e1725a024704",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "76a2c224-0683-5b0c-bf61-2abdf122cd84",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "25ea681c-8e5c-5cef-a44f-54dc126cbc3f",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "871de1f3-5d40-52ca-820b-64750227ba25",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "df0493b4-7d4b-5b5a-a36d-132e351f4df5",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "fba12ab9-42bb-5360-bd82-9194a2748ab0",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "756d1d8b-d6f6-55e7-add4-131c458bcdde",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "5124bc5d-08d8-53a1-a6d6-c002c329a337",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "58b4a313-1ee9-5995-8928-7cb51c7cd5b2",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "01165619-8453-5e03-bef2-efa529326e20",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "f79939a1-d67d-544b-926d-b7cb76cb819e",
+    "commercial_status": "option",
+    "payment_status": "unpaid"
+  },
+  {
+    "unit_id": "ff9b0b13-6bb1-5cde-81b9-30066d337af5",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "b8b447dd-9dbf-5141-8f38-8aac2f15dacc",
+    "commercial_status": "reserved",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "e1f7ee48-9223-5d3a-8dba-0ec06aca2abf",
+    "commercial_status": "sold",
+    "payment_status": "partial"
+  },
+  {
+    "unit_id": "55948fa1-a630-5452-b58c-cbe61141eeda",
+    "commercial_status": "sold",
+    "payment_status": "paid"
+  },
+  {
+    "unit_id": "848edf75-0d39-553a-b2e9-1eefdeb5a9c9",
+    "commercial_status": "unavailable",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "948284bf-a99d-57a1-a1ac-e770de0339cf",
+    "commercial_status": "unknown",
+    "payment_status": "unknown"
+  },
+  {
+    "unit_id": "837a25e2-8c29-58b2-a536-d52a41d4d476",
+    "commercial_status": "available",
+    "payment_status": "unknown"
+  }
+];
+
+const $=id=>document.getElementById(id);
+const records=new Map(demoData.map(r=>[r.unit_id,r]));
+const byId=new Map(units.map(u=>[u.unit_id,u]));
+const level=f=>f===0?'Rez-de-chaussée':`R+${f}`;
+const money={unknown:'Non renseigné',unpaid:'Non payé',partial:'Partiellement payé',paid:'Entièrement payé'};
+const commercial={available:'Disponible',option:'Option temporaire',reserved:'Réservation confirmée',sold:'Vendu',unavailable:'Indisponible',unknown:'Inconnu'};
+const wingName={A:'Aile Nord',B:'Aile Ouest',C:'Aile Est'};
+let viewer,selected=null;
+function el(tag,text,cls){const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(cls)node.className=cls;return node;}
+function dot(key){const d=el('i',undefined,'dot');d.style.background=palette[key];d.setAttribute('aria-hidden','true');return d;}
+function details(event){selected=event?.unit_id??null;$('detail').replaceChildren();const d=$('detail');
+  if(!selected){d.append(el('div','⌑','empty-icon'),el('h3','Choisissez votre point de vue.'),el('p','Cliquez sur un appartement dans la maquette ou choisissez-le dans la liste. Filtrez un niveau pour voir toutes ses unités.'));}
+  else {const u=byId.get(selected),r=records.get(selected),key=statusKey(r);d.append(el('div',u.number,'unit-code'));const pill=el('div',undefined,'pill');pill.append(dot(key),document.createTextNode(statusLabels[key]));d.append(pill);
+    const specs=[['Bâtiment',wingName[u.wing]],['Niveau',level(u.floor)],['Type',u.type],['Surface intérieure',`${u.interior_m2} m²`],['Terrasse',`${u.terrace_m2} m²`],['Commercial',commercial[r?.commercial_status]||'Inconnu'],['Paiement',money[r?.payment_status]||'Non renseigné'],['Prix','Non renseigné']];
+    for(const [k,v] of specs){const row=el('div',undefined,'spec');row.append(el('span',k),el('b',v));d.append(row);}d.append(el('p','Identifiant fictif stable : '+u.unit_id,'id'));
+  }
+  document.querySelectorAll('.unitbtn').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.id===selected)));
+}
+function refresh(){const shown=viewer?viewer.getVisibleUnits():units.filter(u=>($('wing').value==='all'||u.wing===$('wing').value)&&($('floor').value==='all'||String(u.floor)===$('floor').value)&&($('status').value==='all'||statusKey(records.get(u.unit_id))===$('status').value)&&u.number.toLowerCase().includes($('query').value.toLowerCase()));$('visible-count').textContent=`${shown.length} appartement${shown.length>1?'s':''}`;$('list-summary').textContent=`${shown.length} appartement${shown.length>1?'s':''} dans cette vue`;
+  const g=$('unitgrid');g.replaceChildren();if(!shown.length)g.append(el('p','Aucun appartement ne correspond à ces filtres.','list-empty'));
+  for(const u of shown){const key=statusKey(records.get(u.unit_id)),b=el('button',undefined,'unitbtn');b.dataset.id=u.unit_id;b.setAttribute('aria-pressed',String(selected===u.unit_id));b.setAttribute('aria-label',`${u.number}, ${level(u.floor)}, ${statusLabels[key]}`);b.append(dot(key),document.createTextNode(u.number),el('small',`${level(u.floor)} · ${statusLabels[key]}`));b.addEventListener('click',()=>{if(viewer)viewer.select(u.unit_id);else details({unit_id:u.unit_id});if(window.innerWidth<761)$('detail').scrollIntoView({behavior:'smooth',block:'center'});});g.append(b);}
+}
+function filters(){viewer?.setView({wing:$('wing').value,floor:$('floor').value,status:$('status').value,query:$('query').value});refresh();}
+function viewButtons(){const s=viewer?.getState();$('view3d').setAttribute('aria-pressed',String(s?.view==='3d'));$('viewtop').setAttribute('aria-pressed',String(s?.view==='top'));$('explode').setAttribute('aria-pressed',String(!!s?.exploded));$('orientation').textContent=s?.view==='top'?'plan':'indicatif';}
+try{viewer=mount($('viewport'),{data:demoData,onSelect:details,onHover:id=>{const t=$('tooltip');t.hidden=!id;if(id){const u=byId.get(id);t.textContent=`${u.number} · ${level(u.floor)} · ${statusLabels[statusKey(records.get(id))]}`;}}});}
+catch(error){$('viewport').append(el('p','La vue 3D est indisponible. Utilisez la liste des appartements ci-dessous.','error'));$('list').hidden=false;$('toggle-list').setAttribute('aria-expanded','true');$('toggle-list').textContent='Masquer la liste';console.error(error);}
+for(const id of ['wing','floor','status'])$(id).addEventListener('change',filters);$('query').addEventListener('input',filters);
+$('view3d').addEventListener('click',()=>{viewer?.setView({view:'3d'});viewButtons();});
+$('viewtop').addEventListener('click',()=>{viewer?.setView({view:'top',exploded:false,floor:$('floor').value==='all'?'4':$('floor').value});if($('floor').value==='all')$('floor').value='4';viewButtons();refresh();});
+$('explode').addEventListener('click',()=>{const active=!viewer?.getState().exploded;viewer?.setView({view:'3d',exploded:active});viewButtons();});
+$('zoom-in').addEventListener('click',()=>viewer?.setView({zoom:viewer.getState().zoom+.15}));$('zoom-out').addEventListener('click',()=>viewer?.setView({zoom:viewer.getState().zoom-.15}));
+$('reset').addEventListener('click',()=>{for(const id of ['wing','floor','status'])$(id).value='all';$('query').value='';viewer?.reset();viewer?.select(null);filters();viewButtons();});
+$('toggle-list').addEventListener('click',()=>{const visible=$('list').hidden;$('list').hidden=!visible;$('toggle-list').textContent=visible?'Masquer la liste':'Afficher la liste';$('toggle-list').setAttribute('aria-expanded',String(visible));});
+for(const key of Object.keys(palette)){const s=el('span');s.append(dot(key),document.createTextNode(statusLabels[key]));$('legend').append(s);}
+details(null);refresh();
+window.addEventListener('pagehide',()=>viewer?.destroy(),{once:true});
+
+</script></body></html>
+
