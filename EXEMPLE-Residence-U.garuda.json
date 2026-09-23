@@ -1,0 +1,4819 @@
+{
+  "schema": "garuda-studio/1",
+  "id": "52a50def-4833-43a9-a61b-2fe14f142465",
+  "name": "Résidence U · exemple",
+  "alias": "A",
+  "appearance": {
+    "palette": {
+      "unit": "#a8c7b2",
+      "villa": "#d6c5aa",
+      "garden": "#baca99",
+      "pool": "#97cbd0",
+      "road": "#bcc0b9",
+      "terrace": "#e1ceb3",
+      "common": "#c6bdd4",
+      "free": "#deddd0"
+    },
+    "transparency": 55,
+    "northAngle": 0,
+    "compass": true,
+    "tropical": true,
+    "sea": true,
+    "seaSide": "north",
+    "seaDistance": 6,
+    "seaColor": "#79bfc0",
+    "sandColor": "#e4d5ae",
+    "terrainColor": "#cbd6b6",
+    "vegetationColor": "#739e83"
+  },
+  "terrain": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 80,
+      "y": 0
+    },
+    {
+      "x": 80,
+      "y": 80
+    },
+    {
+      "x": 0,
+      "y": 80
+    }
+  ],
+  "levels": [
+    {
+      "id": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "name": "RDC",
+      "height": 3.3
+    },
+    {
+      "id": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "name": "R+1",
+      "height": 3.3
+    },
+    {
+      "id": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "name": "R+2",
+      "height": 3.3
+    },
+    {
+      "id": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "name": "R+3",
+      "height": 3.3
+    },
+    {
+      "id": "fb821277-a774-4f2d-be55-289637593176",
+      "name": "R+4",
+      "height": 3.3
+    }
+  ],
+  "spaces": [
+    {
+      "id": "dd71877b-b08b-4fcc-a366-50bd860282a6",
+      "unit_id": null,
+      "kind": "garden",
+      "levelId": "site",
+      "alias": "SITE",
+      "seq": 1,
+      "customName": "",
+      "sellable": false,
+      "height": 0.12,
+      "color": null,
+      "points": [
+        {
+          "x": 22,
+          "y": 25
+        },
+        {
+          "x": 58,
+          "y": 25
+        },
+        {
+          "x": 58,
+          "y": 64
+        },
+        {
+          "x": 22,
+          "y": 64
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d11cbdbc-e176-4216-af57-b2fd951aa716",
+      "unit_id": null,
+      "kind": "pool",
+      "levelId": "site",
+      "alias": "SITE",
+      "seq": 2,
+      "customName": "",
+      "sellable": false,
+      "height": 0.15,
+      "color": null,
+      "points": [
+        {
+          "x": 33,
+          "y": 32
+        },
+        {
+          "x": 47,
+          "y": 32
+        },
+        {
+          "x": 47,
+          "y": 56
+        },
+        {
+          "x": 33,
+          "y": 56
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "0f5f8c1c-f5fa-4fee-a971-009cf230b273",
+      "unit_id": null,
+      "kind": "road",
+      "levelId": "site",
+      "alias": "SITE",
+      "seq": 3,
+      "customName": "",
+      "sellable": false,
+      "height": 0.06,
+      "color": null,
+      "points": [
+        {
+          "x": 5,
+          "y": 72
+        },
+        {
+          "x": 75,
+          "y": 72
+        },
+        {
+          "x": 75,
+          "y": 77
+        },
+        {
+          "x": 5,
+          "y": 77
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "1bb55090-79c3-480f-8863-1a13c0493bfb",
+      "unit_id": "a73fe0b5-88f0-40de-8e8b-b3a6b0f4788a",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 19
+        },
+        {
+          "x": 10,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fca4b151-a900-4c73-b072-62e196e02b9f",
+      "unit_id": "c6f1b9f1-3107-496d-ba93-58f5624f558a",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 24.7
+        },
+        {
+          "x": 10,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ea5d3a19-6e6a-4eda-b538-28dcc19fc7aa",
+      "unit_id": "207fa8a2-4288-46c0-b994-068d225afdc1",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 24.7
+        },
+        {
+          "x": 61,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "f35b9e70-87dc-4e44-a610-810833c67775",
+      "unit_id": "da885931-c072-4ea6-98bd-c834a246962c",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 16,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 19
+        },
+        {
+          "x": 16,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "94fe433c-8832-4014-b317-8d63c9b22299",
+      "unit_id": "d6cc8ae8-96bc-4edf-9e2b-eebf10c61ca4",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 29.7
+        },
+        {
+          "x": 10,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "15d0242d-885a-46b3-80f2-9fa29ba236f7",
+      "unit_id": "0e4d7dd7-0ee8-4efb-8778-0596d1a874ee",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 29.7
+        },
+        {
+          "x": 61,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "e255dbf1-3ae6-4733-b1d9-28b7d4c85f4d",
+      "unit_id": "179e3693-f986-4cff-820a-a8a2f5d5146e",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 22,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 19
+        },
+        {
+          "x": 22,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d2322220-9858-4b93-9f2f-ded8c0e93052",
+      "unit_id": "89cf7b12-9ffd-41da-bd86-ae926100a7f9",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 34.7
+        },
+        {
+          "x": 10,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "9a46ff86-ad2f-4721-aeff-ab0a31241418",
+      "unit_id": "ffce3ea5-5e9a-47e4-ab1a-f7ba6f8bc2fc",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 34.7
+        },
+        {
+          "x": 61,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d840c3a3-9e09-4b0e-8a1a-347777b01b0d",
+      "unit_id": "5f0c93af-2c54-4129-8f36-cd09a9fcaf6b",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 28,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 19
+        },
+        {
+          "x": 28,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "df7cd7c7-1d90-4bf7-93d2-7007c612a3f4",
+      "unit_id": "5e30d471-0cd1-4371-be43-060ffb97a798",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 39.7
+        },
+        {
+          "x": 10,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7cbd2429-6a4a-4386-ad9f-d697aeec3afb",
+      "unit_id": "c619eb89-9715-4c70-9817-5138973165a5",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 39.7
+        },
+        {
+          "x": 61,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "9c2ed5cf-1048-4689-8856-2c31b485e947",
+      "unit_id": "7fb7c91c-7ea5-4e53-ab2f-39eeb6508428",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 34,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 19
+        },
+        {
+          "x": 34,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "c8e9ff3e-26f9-40c7-a762-3514824806aa",
+      "unit_id": "8f2bb506-48f3-4d86-8d98-aa613dcd3707",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 44.7
+        },
+        {
+          "x": 10,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "0950e167-86c9-4d90-8179-35364b995715",
+      "unit_id": "9f7514d2-d7ca-4384-aed2-e5ec00060b69",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 44.7
+        },
+        {
+          "x": 61,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "267266cd-8559-4575-bfa4-d8daebcdb46a",
+      "unit_id": "496e60ef-9b6f-4f77-9499-622e70f8b75b",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 40,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 19
+        },
+        {
+          "x": 40,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7795b790-2e8b-4c33-8fd0-7c9e9d2f9015",
+      "unit_id": "d345a55f-ec4d-4948-a969-3fce122ebdf2",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 49.7
+        },
+        {
+          "x": 10,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "a6267764-91bd-4280-8c8c-1a47e1d0a5b1",
+      "unit_id": "6ea80238-0374-4dcc-8b62-61fe3785120d",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 49.7
+        },
+        {
+          "x": 61,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "2cf3f59a-0390-4d76-94cd-1ebe9bf1a316",
+      "unit_id": "8b1056c6-7f58-4268-86eb-3d8e362833ad",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 46,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 19
+        },
+        {
+          "x": 46,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "e92d233e-963e-4d2b-80fa-e45bd44a76be",
+      "unit_id": "96c68d99-dd48-41d6-8483-1071dd294c99",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 54.7
+        },
+        {
+          "x": 10,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "64bf549e-1e6d-44fc-974d-524265499d94",
+      "unit_id": "c8d1779d-0f01-4a1c-9179-649654fb7d29",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 54.7
+        },
+        {
+          "x": 61,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "4748476b-588c-4c31-a2bc-4d680a42f205",
+      "unit_id": "f36d04cb-6111-45a3-8580-ff891b0f64d3",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 52,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 19
+        },
+        {
+          "x": 52,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "770d227d-c393-49b1-9cbb-3ca1cf52a25d",
+      "unit_id": "b993b87f-32e6-4b28-bd35-d932394dce2c",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 59.7
+        },
+        {
+          "x": 10,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "9b4664a5-7235-4c48-9581-29b0f4bd2aac",
+      "unit_id": "64bb3af2-3861-4fc8-a39e-1e467d95bd6c",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 59.7
+        },
+        {
+          "x": 61,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "14a034db-2b03-4114-b884-5d11cf5a41eb",
+      "unit_id": "687fa258-85aa-43e7-8558-8cc16ac5c8b6",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 58,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 19
+        },
+        {
+          "x": 58,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "e306f416-0f37-4b8d-8e0e-46a1ba2c5352",
+      "unit_id": "f594ed8d-4b61-4170-a708-3f4171a604e2",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 64.7
+        },
+        {
+          "x": 10,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "24917565-0552-4c9a-b089-87fefd08b879",
+      "unit_id": "f3e9d5b5-2acc-4f04-8b7d-fd22843d9703",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 64.7
+        },
+        {
+          "x": 61,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "a7c517b2-f176-411e-93ff-046d27f51a41",
+      "unit_id": "3d5f533b-a4d5-4522-804e-1d6e71f1ccbb",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "A",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 64,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 19
+        },
+        {
+          "x": 64,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "0308dc98-edb8-497f-b87c-77e30fffa4cc",
+      "unit_id": "d1a755e0-0dae-4419-973b-1745e29695c6",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "B",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 69.7
+        },
+        {
+          "x": 10,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "048a96c5-e061-45bc-81d7-37d5ba15d393",
+      "unit_id": "612bdb13-1f64-4609-836c-f5704fac26a6",
+      "kind": "unit",
+      "levelId": "ceaab231-cee2-4090-b6d9-ee10104ab24b",
+      "alias": "C",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 69.7
+        },
+        {
+          "x": 61,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "80ce1b2c-0459-4c40-bff1-1567efc5cba4",
+      "unit_id": "6af62155-6f58-4f56-9038-8c9aae2501ff",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 19
+        },
+        {
+          "x": 10,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cdc5a26e-f2d1-42f9-a833-7b9195f6dbc8",
+      "unit_id": "44363264-90dc-4d62-b8f6-4ff5e0849c51",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 24.7
+        },
+        {
+          "x": 10,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "e2a2ff41-c75f-4fe9-b988-ab6262b7279e",
+      "unit_id": "96d2d771-dd6d-4446-8187-cbb2e3354397",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 24.7
+        },
+        {
+          "x": 61,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "3c94c127-85f1-4ce0-849f-352fe80a8b51",
+      "unit_id": "82502538-63d0-417a-a48f-5154e5e17fbb",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 16,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 19
+        },
+        {
+          "x": 16,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "edd4ecfe-a9f5-44d5-99b5-7d25167be652",
+      "unit_id": "42260e3c-eff7-4573-b20c-a93cfb85bfb6",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 29.7
+        },
+        {
+          "x": 10,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "945bfbf2-2778-4c39-ab11-223af916d91e",
+      "unit_id": "b28310d3-de16-4cc7-ab20-d7d2c5bf032a",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 29.7
+        },
+        {
+          "x": 61,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "f47942b9-8ee9-4bfb-b527-75b67bb242e1",
+      "unit_id": "3dfe2326-3e32-4168-8be8-7e5ec25021bc",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 22,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 19
+        },
+        {
+          "x": 22,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bf781bee-3f39-4c37-88ec-2ed31e264d81",
+      "unit_id": "a4fe873d-284b-465e-adb7-11988029a8f1",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 34.7
+        },
+        {
+          "x": 10,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "f15b680a-3a4d-4752-9bd1-98db1b47ae14",
+      "unit_id": "c4dca51b-989b-4e6f-8c64-3afe78dcedda",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 34.7
+        },
+        {
+          "x": 61,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "a77127f2-9632-408b-9161-1798bd72c8f4",
+      "unit_id": "000d9550-1073-48d6-a7be-c79b5e9f2e39",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 28,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 19
+        },
+        {
+          "x": 28,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "348dcecb-5049-43ee-b7f3-daae72b54225",
+      "unit_id": "4d1b4aa0-86df-4c4a-a35e-a9d63d9afeef",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 39.7
+        },
+        {
+          "x": 10,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "08baf41e-01d4-4feb-aef8-d9f73e32faa3",
+      "unit_id": "e6bd6a40-9dc2-44d1-b010-d6ce460c351d",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 39.7
+        },
+        {
+          "x": 61,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "b4c70ae1-32c9-438a-97a8-d6769a0406ab",
+      "unit_id": "a34b1ddb-4a37-4e9c-9a42-3957b8d7a19d",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 34,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 19
+        },
+        {
+          "x": 34,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "6d4acbbe-4498-43e5-a4f0-be4e97ff522d",
+      "unit_id": "9877f5da-d9bd-41a1-8108-c8fbf0d38eea",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 44.7
+        },
+        {
+          "x": 10,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "a2cf8a85-6c4a-432a-aba8-3cc5942601cc",
+      "unit_id": "627a6815-988b-439a-947c-fcfbc403efc4",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 44.7
+        },
+        {
+          "x": 61,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "056715ce-9fdb-4d4f-bd65-5ee528c47ebf",
+      "unit_id": "5a964e38-1bc9-48c5-9561-7fa882fe74b4",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 40,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 19
+        },
+        {
+          "x": 40,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "db5c116d-6edb-4a6b-adad-cf4cfdad0963",
+      "unit_id": "3223aa3a-912a-4db4-a2ef-961589577220",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 49.7
+        },
+        {
+          "x": 10,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "96e6c104-a2d2-4737-88c8-3a2829c0c56e",
+      "unit_id": "ce663d04-bb91-4ba6-bbc4-4aedc731ba70",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 49.7
+        },
+        {
+          "x": 61,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "e21cd5a5-6358-4a14-a574-0d47b6120113",
+      "unit_id": "7eee7fc0-b6d3-48cc-9838-fa79f043510e",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 46,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 19
+        },
+        {
+          "x": 46,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "0ea10441-2575-4cd4-aa00-11fd1876a0c1",
+      "unit_id": "d29d7ede-4b82-43dd-9914-f2f0b0bcacb3",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 54.7
+        },
+        {
+          "x": 10,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "2bc92530-ec21-4edb-927c-213cfcd20fde",
+      "unit_id": "8949a0d8-7b8b-4614-acf1-aa69197fcaea",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 54.7
+        },
+        {
+          "x": 61,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "70bbd49f-a7b9-4013-aa03-3b0b0d33c8cc",
+      "unit_id": "fbf8ef2a-fafe-4dbd-9d8a-957016a8fa8b",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 52,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 19
+        },
+        {
+          "x": 52,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d97d4cb0-b0ea-4f3c-b5e9-ce1588b6fde6",
+      "unit_id": "359d213e-2257-4970-8cff-568811324203",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 59.7
+        },
+        {
+          "x": 10,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "323f35de-06e7-4874-87e1-fe59f20d9451",
+      "unit_id": "d1cb88ee-773a-4474-a5fe-58a4b5ee3e41",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 59.7
+        },
+        {
+          "x": 61,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ebcec181-06bd-4db2-b1e6-e47df16642a4",
+      "unit_id": "2442929c-385a-4f8c-9c7e-79faee7818c5",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 58,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 19
+        },
+        {
+          "x": 58,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "8d03f618-980f-4339-80a4-bad21d1a25be",
+      "unit_id": "dc862f71-61a0-4c2c-b099-b38340df204d",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 64.7
+        },
+        {
+          "x": 10,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "605c7cc5-d141-4054-95f1-7c85bfe9823b",
+      "unit_id": "5c26dbc3-a0cc-44ff-8978-dc2528f6b27e",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 64.7
+        },
+        {
+          "x": 61,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "1fa2d741-ab0e-476a-9cba-073fde07b00a",
+      "unit_id": "fbb9f5cb-6958-4b29-a81b-abf7c1d63084",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "A",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 64,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 19
+        },
+        {
+          "x": 64,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "27b2c5c6-134f-45ed-8e83-77d03c5542f6",
+      "unit_id": "ef3b4072-db6e-490b-a295-9507d65c9ff5",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "B",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 69.7
+        },
+        {
+          "x": 10,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "a97e0a63-9a67-4b6a-bee0-81f205a5b671",
+      "unit_id": "60bb0e04-9f43-4164-aa87-4521d061aba5",
+      "kind": "unit",
+      "levelId": "793e9ea1-8ec4-4908-9b17-d4bd47d4f5e3",
+      "alias": "C",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 69.7
+        },
+        {
+          "x": 61,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "0e268422-3eb5-4a4a-94b0-ab904ea8859b",
+      "unit_id": "be789938-3576-4783-a896-50cf27fd86cd",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 19
+        },
+        {
+          "x": 10,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "0d30d53b-51f0-44d0-886e-668bfdee51be",
+      "unit_id": "5ea182a9-80da-491c-81d1-ee4bf5b5e16f",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 24.7
+        },
+        {
+          "x": 10,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "b7fa0857-24f6-4d8b-9bd7-e62468e524e9",
+      "unit_id": "bf7a6925-d251-4c8a-aa9a-dbc9add9e6d9",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 24.7
+        },
+        {
+          "x": 61,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7d2230b1-f9b5-4cb6-93cb-32c48004e8c0",
+      "unit_id": "8777a18c-f485-4195-9dae-c3b1295b625a",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 16,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 19
+        },
+        {
+          "x": 16,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "aeadfac2-7855-4249-af6a-7fdd6c823352",
+      "unit_id": "2491d16b-7539-4ae5-8dd6-a66f95af88c6",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 29.7
+        },
+        {
+          "x": 10,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "e0677d1d-f68e-43c6-9136-7042fde56167",
+      "unit_id": "6c21a47c-33b0-4ae9-9ae6-f5bff216406d",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 29.7
+        },
+        {
+          "x": 61,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "b37631bc-bc51-413b-a42c-e8efc5fb0d6b",
+      "unit_id": "4e6bea81-5fcf-44d1-9926-b43ed550886c",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 22,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 19
+        },
+        {
+          "x": 22,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "6d4b6372-1e94-4380-83fc-cc59fa31df44",
+      "unit_id": "3895d3f2-1722-472e-b373-51b8d0102ea4",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 34.7
+        },
+        {
+          "x": 10,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "be71a2a7-9887-4cd2-aa77-1ce2e5e5d6dc",
+      "unit_id": "55cdcde5-18f9-45f6-8b3f-5d8da4a98cb9",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 34.7
+        },
+        {
+          "x": 61,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fe0d48c6-3515-4fd3-9ef7-736d64dc4b39",
+      "unit_id": "497bac26-792e-42b8-9537-f66d2efd91f4",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 28,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 19
+        },
+        {
+          "x": 28,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "8b4f3df3-4265-4b32-9096-022a317982e7",
+      "unit_id": "d8a72f53-84b7-4cfb-9110-e20e6dfe728d",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 39.7
+        },
+        {
+          "x": 10,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "01e78135-aedb-4ca7-8b0b-78b53f9bb151",
+      "unit_id": "1f3ff7b7-b2f2-4114-8eab-918fa7a7f5d2",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 39.7
+        },
+        {
+          "x": 61,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "80c72267-10f0-4dc4-994f-be4a41cdc679",
+      "unit_id": "4c719590-00aa-4446-b50a-54ba165bb8d3",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 34,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 19
+        },
+        {
+          "x": 34,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "75b46dcb-7f58-4be9-8535-4a79cb6c60bc",
+      "unit_id": "4b60fd2a-c215-459c-80f7-fcabc3eb3061",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 44.7
+        },
+        {
+          "x": 10,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "5b98d04e-67b4-49ff-ac0e-08cb6df4370c",
+      "unit_id": "431a6b19-72eb-4eb0-a54d-5deb249df82d",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 44.7
+        },
+        {
+          "x": 61,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "1750ab68-acda-44a4-a9cb-fe5c1055911b",
+      "unit_id": "0feb06c5-47be-4618-b325-6ad5624a60e4",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 40,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 19
+        },
+        {
+          "x": 40,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d96833f5-08e6-4215-8082-e4f2f832c291",
+      "unit_id": "f926ed98-e22f-441e-b73f-2fbc381eeb11",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 49.7
+        },
+        {
+          "x": 10,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "4cd5b776-ffbf-4ab4-acf6-13643402e56d",
+      "unit_id": "87169652-4259-4a3c-8a30-84f2805a6e80",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 49.7
+        },
+        {
+          "x": 61,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d4b3a059-308d-43eb-9c2f-ed5e08837ecb",
+      "unit_id": "5839d2cc-3b3a-4e03-b82a-af37f3a767a8",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 46,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 19
+        },
+        {
+          "x": 46,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "3c3da39f-287a-40f5-b51d-a12a8c1e3ccc",
+      "unit_id": "9ecb461a-5e84-407a-bd85-18e00c565483",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 54.7
+        },
+        {
+          "x": 10,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "9aff3f1d-2db2-4465-bd70-d766f7e94b38",
+      "unit_id": "53a7d9d0-4ff9-45b1-adb1-f7291cc62092",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 54.7
+        },
+        {
+          "x": 61,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bef83a33-0513-4fe6-afc3-c3e634a3089e",
+      "unit_id": "3d79e41d-861a-4d24-bf2b-eeced995440b",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 52,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 19
+        },
+        {
+          "x": 52,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ae151f1c-bfbb-4fab-ade4-d55adec21a87",
+      "unit_id": "b409eca7-fa25-4fac-86f7-5312b2b32847",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 59.7
+        },
+        {
+          "x": 10,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "05ac4e83-848f-44ff-9639-ae1c024e45ae",
+      "unit_id": "a82df8b3-e556-4b19-b622-149231c59763",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 59.7
+        },
+        {
+          "x": 61,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "32495c62-d17a-415a-a947-db66f28bc446",
+      "unit_id": "c108083e-e6c5-4c0a-a309-0972ef38cc86",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 58,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 19
+        },
+        {
+          "x": 58,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7a3c7734-0cc2-4beb-a62b-82c16a999685",
+      "unit_id": "2e84bf1b-f814-4a36-8c8e-c1e226cdabfe",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 64.7
+        },
+        {
+          "x": 10,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "c91f9bb7-89bb-488b-bb30-1452ce5ef6cd",
+      "unit_id": "f146fe56-a9db-45d2-8724-14fb3dea2335",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 64.7
+        },
+        {
+          "x": 61,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "00dcc4d2-d90f-43dc-9f89-173e0955009f",
+      "unit_id": "e808a0ce-6378-451d-8712-1889467f170f",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "A",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 64,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 19
+        },
+        {
+          "x": 64,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "977f2d6a-8c76-44a8-8a5f-3d00e4556a92",
+      "unit_id": "3fbb1e88-da99-4311-ba53-e8e9f832e097",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "B",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 69.7
+        },
+        {
+          "x": 10,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "3673b8b6-05b9-4069-8351-d6c938250fa7",
+      "unit_id": "e1ddc009-6c57-4109-9dc7-090e88915f51",
+      "kind": "unit",
+      "levelId": "b1b4d2d7-97de-4b76-ad26-5f97aa51d083",
+      "alias": "C",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 69.7
+        },
+        {
+          "x": 61,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "3de4790a-c561-41c3-b0e9-c7b8dc3a93b7",
+      "unit_id": "45997bdf-c3b6-4894-80b7-7d002c5f626c",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 19
+        },
+        {
+          "x": 10,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "a1598cb5-41c0-4559-beda-2e57ee2a4c95",
+      "unit_id": "3351656b-74a7-4dd1-9d5d-a17e6bddbe60",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 24.7
+        },
+        {
+          "x": 10,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ead5c857-8a12-444f-abb8-ee9dc0c19d2a",
+      "unit_id": "e797a0f9-3853-47d4-99ec-acf68601d776",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 24.7
+        },
+        {
+          "x": 61,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7793a14d-f864-4a08-b110-9f3a5ed6f651",
+      "unit_id": "d933b631-0d2f-4cf4-b2e9-7edb96e8cd4d",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 16,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 19
+        },
+        {
+          "x": 16,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "3a2d6e33-69f9-4e66-b310-560a3fdb51ef",
+      "unit_id": "d8744eef-a6ae-4629-80b2-05ffcc45b098",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 29.7
+        },
+        {
+          "x": 10,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ae381de1-2fae-4726-aa97-d43f7c043098",
+      "unit_id": "586090ae-365b-4203-97c6-ac021f2ae9c3",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 29.7
+        },
+        {
+          "x": 61,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d23aacdf-8597-4a68-a780-a7027c483337",
+      "unit_id": "40d74e0b-c9ec-43f8-8090-768c8ea98c6e",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 22,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 19
+        },
+        {
+          "x": 22,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "452bc75c-7258-4c0f-935b-575a6aae6bc3",
+      "unit_id": "4f515810-835e-46a7-9d2f-73f6321297f3",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 34.7
+        },
+        {
+          "x": 10,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ecd561ce-3c52-4e5b-a8f0-c031007037e1",
+      "unit_id": "abe9b32a-2568-45e8-b903-c8d7ae6c1cae",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 34.7
+        },
+        {
+          "x": 61,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "b2eb885e-3691-4acb-8a17-d525461366ab",
+      "unit_id": "6dd8bec6-e41a-4c22-9b9b-f24fa985981e",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 28,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 19
+        },
+        {
+          "x": 28,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "59411427-af79-4f2a-8394-425f5c192455",
+      "unit_id": "d0848801-2892-4d62-8982-7441c5ecfb64",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 39.7
+        },
+        {
+          "x": 10,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "3a05bb5d-f9d4-4f6e-916b-ff857fdd2d9b",
+      "unit_id": "8f3f74cf-c821-4d15-a5dc-613d188a5e46",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 39.7
+        },
+        {
+          "x": 61,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "0f7a7cc2-0f41-45f2-a41e-7f4b78107325",
+      "unit_id": "51a93ed6-4f2e-4b4f-b4d2-f99b204a8a78",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 34,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 19
+        },
+        {
+          "x": 34,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "98ea2943-3cb0-4ba8-a61d-2e1da8358df8",
+      "unit_id": "32b681c1-7040-4c8d-933f-9ae7425ba88f",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 44.7
+        },
+        {
+          "x": 10,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "1c849260-3f9f-4dda-a2fa-1cd631c21d4e",
+      "unit_id": "1a1be246-b6b1-4c5a-8ded-c2ff37db027c",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 44.7
+        },
+        {
+          "x": 61,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "2d8343cc-bf01-4fe7-b33c-3b6e6514f05e",
+      "unit_id": "d503cf11-8e3b-4cfc-90c9-e870beab959d",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 40,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 19
+        },
+        {
+          "x": 40,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "50ac57cc-1a06-47d8-827a-ddfc97264398",
+      "unit_id": "a303b514-f732-416e-959a-78ae38c9a883",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 49.7
+        },
+        {
+          "x": 10,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "e027eee9-b378-415d-ae20-ceb6883cbb0c",
+      "unit_id": "899d2428-5ba5-49dd-841b-0433d7e9cebc",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 49.7
+        },
+        {
+          "x": 61,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "489a8737-e290-459e-a83a-5497133018a4",
+      "unit_id": "252b6257-863f-40ba-87ba-712421e96b17",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 46,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 19
+        },
+        {
+          "x": 46,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "70da5c01-6d24-4744-a999-aeacc5bf43d2",
+      "unit_id": "cb4208cb-9203-4416-a782-6055bc5bc289",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 54.7
+        },
+        {
+          "x": 10,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "74fcdf8a-a8b0-4e5b-9688-30698fbfca5c",
+      "unit_id": "e98efc23-ce2e-42dc-8e44-103f9a704829",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 54.7
+        },
+        {
+          "x": 61,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "422055e1-5f8f-4a6a-9393-867e740a81cb",
+      "unit_id": "e1fa5e98-34ae-47d7-8452-ebd1d8a1f59c",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 52,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 19
+        },
+        {
+          "x": 52,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "0d0c666b-d2f6-4564-a9f1-fbc8da7b9109",
+      "unit_id": "235539c4-fbb6-4e11-a86a-6f0129c57f58",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 59.7
+        },
+        {
+          "x": 10,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "3d11aab8-dc65-46ec-bbba-49f32c7f4f0e",
+      "unit_id": "14e0775a-5dc7-48e3-9e7f-ace7b3a3e1aa",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 59.7
+        },
+        {
+          "x": 61,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "c26d91fe-d382-41e2-954c-aeab7cfb1204",
+      "unit_id": "d1c8c62e-701e-4c89-88b8-907b04ff273e",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 58,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 19
+        },
+        {
+          "x": 58,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7ef35d6f-030c-4893-918c-eccae32ca9cb",
+      "unit_id": "302ba55d-b50d-431a-a2d3-d139d3602e0c",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 64.7
+        },
+        {
+          "x": 10,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ef506236-cb47-48c0-a91b-8f4a283fd2e8",
+      "unit_id": "a3dfdec9-78c1-4704-b94d-7f4147369c41",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 64.7
+        },
+        {
+          "x": 61,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "777b745e-47af-4d96-adc6-92141fa2d224",
+      "unit_id": "8fe014fd-e0a3-47bb-98ef-0a9677e815d6",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "A",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 64,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 19
+        },
+        {
+          "x": 64,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "98940263-953d-4347-8b46-dc9874227517",
+      "unit_id": "434ba596-b3fa-420a-bb68-0db27d47ecc7",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "B",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 69.7
+        },
+        {
+          "x": 10,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7dbc6809-8550-49e3-8560-3ae899764cc9",
+      "unit_id": "fb292698-d2fe-4c04-8e77-e16e334202db",
+      "kind": "unit",
+      "levelId": "1aa291d1-08f8-49f2-b0f9-0093cdef4d84",
+      "alias": "C",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 69.7
+        },
+        {
+          "x": 61,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "e7601a60-ddbf-409c-9a7f-84d3434a2307",
+      "unit_id": "d1cb67f3-b074-4d18-90da-85fb2ab4fa18",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 10
+        },
+        {
+          "x": 15.7,
+          "y": 19
+        },
+        {
+          "x": 10,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d8d5a28e-5f29-41ec-9c2d-12c0c65a89ae",
+      "unit_id": "6f6f4e03-a20c-4e8d-9ae6-4cd884a4ba81",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 20
+        },
+        {
+          "x": 19,
+          "y": 24.7
+        },
+        {
+          "x": 10,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "c60b6250-47ab-492c-a2ff-91a2a768239c",
+      "unit_id": "80142b32-2b56-44be-a682-ce59cfdeec43",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 1,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 20
+        },
+        {
+          "x": 70,
+          "y": 24.7
+        },
+        {
+          "x": 61,
+          "y": 24.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "395130d8-7da8-4540-b0cd-9b42a8636558",
+      "unit_id": "62c0a23f-f508-4bc8-a63a-87a44770aef6",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 16,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 10
+        },
+        {
+          "x": 21.7,
+          "y": 19
+        },
+        {
+          "x": 16,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "90e08377-8f3b-44e6-a623-601995f7f674",
+      "unit_id": "35f0d172-a21d-4352-8ce0-037ffb9f0b43",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 25
+        },
+        {
+          "x": 19,
+          "y": 29.7
+        },
+        {
+          "x": 10,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "b1206a9f-b590-4626-a012-5961eac83cb0",
+      "unit_id": "1b5e15e2-3187-40a3-87c0-6aca165e31fe",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 2,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 29.7
+        },
+        {
+          "x": 61,
+          "y": 29.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "60d48049-abf1-4a1c-b2b1-ebec975a221f",
+      "unit_id": "acd43c69-8d80-43cc-ab19-d321a36c5bf9",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 22,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 10
+        },
+        {
+          "x": 27.7,
+          "y": 19
+        },
+        {
+          "x": 22,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "de843b34-a28e-459f-a3a7-cec587c411ad",
+      "unit_id": "5c919905-c2fd-4e2e-96b5-0ccb950867ed",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 30
+        },
+        {
+          "x": 19,
+          "y": 34.7
+        },
+        {
+          "x": 10,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "254ca61f-55d4-4db1-9ff2-d26ad1b3be30",
+      "unit_id": "edc860bd-27be-4b35-8ec6-6f5369d2e980",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 3,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 30
+        },
+        {
+          "x": 70,
+          "y": 34.7
+        },
+        {
+          "x": 61,
+          "y": 34.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "a2a02cad-be96-4456-a8ee-41f47b268d14",
+      "unit_id": "3fc5a1f7-cfd3-4af9-8b53-cbcb73d3fa6f",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 28,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 10
+        },
+        {
+          "x": 33.7,
+          "y": 19
+        },
+        {
+          "x": 28,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "967b547c-d6d4-48c0-aaeb-36b7de931137",
+      "unit_id": "f3736c67-4d0b-403e-a2ce-bb25012a0912",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 35
+        },
+        {
+          "x": 19,
+          "y": 39.7
+        },
+        {
+          "x": 10,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "15c0e985-e8d1-438e-83e7-227f7fdb2a0d",
+      "unit_id": "86321bec-9cad-477c-8b2f-f57e0a74e39f",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 4,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 35
+        },
+        {
+          "x": 70,
+          "y": 39.7
+        },
+        {
+          "x": 61,
+          "y": 39.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d2af35e2-544f-4bc6-bce6-203518e29101",
+      "unit_id": "796fadac-b220-4378-8a69-89d67b715121",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 34,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 10
+        },
+        {
+          "x": 39.7,
+          "y": 19
+        },
+        {
+          "x": 34,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fc2cd00c-dd45-4566-8135-ab83ffe41d10",
+      "unit_id": "41a287ec-3dab-4d72-89ec-f66ded8516c8",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 40
+        },
+        {
+          "x": 19,
+          "y": 44.7
+        },
+        {
+          "x": 10,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7b68774a-073d-4a00-b764-4b72017411a2",
+      "unit_id": "4c4a85a5-8e0f-467b-9dee-87a4ff1f8caf",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 5,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 40
+        },
+        {
+          "x": 70,
+          "y": 44.7
+        },
+        {
+          "x": 61,
+          "y": 44.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "27131cb9-57ed-46bc-bcdf-141273db7857",
+      "unit_id": "2238e897-5205-47ff-82fc-ef65a7505d9f",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 40,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 10
+        },
+        {
+          "x": 45.7,
+          "y": 19
+        },
+        {
+          "x": 40,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "85363981-92dd-4b0f-b7a0-25f78a0a94d7",
+      "unit_id": "562711cd-07a8-4efc-86d6-6222f1ae1e05",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 45
+        },
+        {
+          "x": 19,
+          "y": 49.7
+        },
+        {
+          "x": 10,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "774341a1-c25c-405b-b423-362c5a343849",
+      "unit_id": "3c18ab49-607c-4b26-be4e-f724b5e0fcff",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 6,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 45
+        },
+        {
+          "x": 70,
+          "y": 49.7
+        },
+        {
+          "x": 61,
+          "y": 49.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "2a11fe03-97eb-42d8-b7a7-7b65088b9867",
+      "unit_id": "8b371f8a-6a30-4c37-92b3-e82033815b4c",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 46,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 10
+        },
+        {
+          "x": 51.7,
+          "y": 19
+        },
+        {
+          "x": 46,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "4b4df29e-0010-40c3-b4b1-a471988fb3a1",
+      "unit_id": "bc9e5a40-d3ea-448c-955d-d2039de923e7",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 50
+        },
+        {
+          "x": 19,
+          "y": 54.7
+        },
+        {
+          "x": 10,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d61cad27-a0fc-4373-862e-4ccffc3cad27",
+      "unit_id": "6abaf483-0157-40b7-a3b4-a12623cd80ff",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 7,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 50
+        },
+        {
+          "x": 70,
+          "y": 54.7
+        },
+        {
+          "x": 61,
+          "y": 54.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "7d15f2c6-d58b-4863-96a4-2b0830823a15",
+      "unit_id": "e35370c1-a1e1-4c6d-9d08-061c12dc499a",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 52,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 10
+        },
+        {
+          "x": 57.7,
+          "y": 19
+        },
+        {
+          "x": 52,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "58db9a35-9327-4804-8480-4e185c595def",
+      "unit_id": "f502f14d-c605-40a4-8a72-32d178efc0ff",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 55
+        },
+        {
+          "x": 19,
+          "y": 59.7
+        },
+        {
+          "x": 10,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "5b542772-783d-4f94-a85a-f304116d13df",
+      "unit_id": "7d9ea0e9-9af2-4a36-9ec1-b05894f9bdb8",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 8,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 55
+        },
+        {
+          "x": 70,
+          "y": 59.7
+        },
+        {
+          "x": 61,
+          "y": 59.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "9229016c-b910-470a-b858-84b6c4f1f147",
+      "unit_id": "de281e36-57e6-42d9-b556-84b990620731",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 58,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 10
+        },
+        {
+          "x": 63.7,
+          "y": 19
+        },
+        {
+          "x": 58,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ddd5fb82-1b9b-4f54-8bcd-d90e2de3ac64",
+      "unit_id": "34140d92-d70e-490a-be53-66e7a975cbe4",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 60
+        },
+        {
+          "x": 19,
+          "y": 64.7
+        },
+        {
+          "x": 10,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "987b5ad3-8463-462e-a19a-24157c88f0d1",
+      "unit_id": "6b9a68b1-4d8c-432b-b70d-4008a6ffb778",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 9,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 60
+        },
+        {
+          "x": 70,
+          "y": 64.7
+        },
+        {
+          "x": 61,
+          "y": 64.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "d9b2f300-8aa0-417c-afff-a71ba3e71971",
+      "unit_id": "f57d734c-bcba-492c-8e86-d930619ef034",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "A",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 64,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 10
+        },
+        {
+          "x": 69.7,
+          "y": 19
+        },
+        {
+          "x": 64,
+          "y": 19
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "f1e47bc1-7488-469d-bc9a-bd70606f0a26",
+      "unit_id": "7613b26b-224d-4c34-a812-64d6c4acf099",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "B",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 10,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 65
+        },
+        {
+          "x": 19,
+          "y": 69.7
+        },
+        {
+          "x": 10,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "1c7cc080-1807-48bd-a421-95f00e09f7dc",
+      "unit_id": "d3c553dd-9a33-4d15-92e8-100a8c7515c9",
+      "kind": "unit",
+      "levelId": "fb821277-a774-4f2d-be55-289637593176",
+      "alias": "C",
+      "seq": 10,
+      "customName": "",
+      "sellable": true,
+      "height": 3,
+      "color": null,
+      "points": [
+        {
+          "x": 61,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 65
+        },
+        {
+          "x": 70,
+          "y": 69.7
+        },
+        {
+          "x": 61,
+          "y": 69.7
+        }
+      ],
+      "notes": ""
+    }
+  ]
+}
